@@ -39,7 +39,7 @@ export async function post_product_card_comments_db(bind: any, client: Client) {
     try {
         
         query = `
-        intsert into  app.product_card_comment (user_id,message,product_card_id
+        insert into  app.product_card_comment (user_id,message,product_card_id
          ${bind.parent_id? ",parent_id":""}
         )
         values ($${values.push(bind.user_id)},$${values.push(bind.message)},
