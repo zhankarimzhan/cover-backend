@@ -1,0 +1,74 @@
+create table ref.product_Type(
+id serial primary key,
+name varchar(255)
+
+)
+
+create table app.product_card (
+id serial primary key,
+name varchar (255),
+description text,
+create_date timestamp default current_Timestamp, 
+update_Date timestamp null,
+create_user_id int references hr.user(id),
+product_type_id int references ref.product_type(id),
+current_price int 
+)
+
+create table app.product_price_history (
+	id serial primary key,
+	price int,
+	user_id int references hr.user(id),
+	create_date timestamp default current_timestamp,
+	product_card_id int references app.product_card(id)
+
+)
+
+create table app.product_card_viewer (
+	id serial primary key,
+	user_id int references hr.user(id),
+	create_date timestamp default current_timestamp,
+	liked boolean default false,
+	product_card_id int references app.product_card(id)
+
+)
+create table app.product_card_comment (
+	id serial primary key,
+	user_id int references hr.user(id),
+	create_date timestamp default current_timestamp,
+	parent_id int references  app.product_card_comment(id),
+	product_card_id int references app.product_card(id),
+	message text
+)
+
+create table app.comment_action (
+	id serial primary key,
+	user_id int references hr.user(id),
+	create_date timestamp default current_timestamp,
+	comment_id int references app.product_card_comment(id),
+	is_liked boolean default false 
+)
+
+
+
+
+create table ref.file_type(
+id serial primary key,
+name varchar(1024),
+bucket_name varchar(255),
+file_uuid varchar(255)
+)
+
+create table app.file(
+id serial primary key,
+name varchar(1024),
+file_type_id int references ref.file_type(id),
+deleted_at timestamp null
+)
+
+create table  app.object_file(
+	id serial primary key,
+	object_Id int,
+	file_id int references app.file(id),
+	deleted_at timestamp null
+)

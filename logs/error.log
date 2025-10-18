@@ -1,0 +1,350 @@
+2025-10-13 18:49:52 [[31merror[39m]: [31mINSERT has more target columns than expressions[39m
+Stack: error: [31mINSERT has more target columns than expressions[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 18:50:04 [[31merror[39m]: [31mClient has already been connected. You cannot reuse a client.[39m
+Stack: Error: [31mClient has already been connected. You cannot reuse a client.[39m
+    at Client._connect (/app/node_modules/pg/lib/client.js:95:19)
+    at /app/node_modules/pg/lib/client.js:171:12
+    at new Promise (<anonymous>)
+    at Client.connect (/app/node_modules/pg/lib/client.js:170:12)
+    at /app/src/controllers/user.ts:16:18
+    at Generator.next (<anonymous>)
+    at /app/src/controllers/user.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/app/src/controllers/user.ts:4:12)
+    at registerController (/app/src/controllers/user.ts:24:12)
+2025-10-13 18:50:04 [[31merror[39m]: [31m[31mClient has already been connected. You cannot reuse a client.[31m[39m
+Stack: Error: [31mClient has already been connected. You cannot reuse a client.[39m
+    at Client._connect (/app/node_modules/pg/lib/client.js:95:19)
+    at /app/node_modules/pg/lib/client.js:171:12
+    at new Promise (<anonymous>)
+    at Client.connect (/app/node_modules/pg/lib/client.js:170:12)
+    at /app/src/controllers/user.ts:16:18
+    at Generator.next (<anonymous>)
+    at /app/src/controllers/user.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/app/src/controllers/user.ts:4:12)
+    at registerController (/app/src/controllers/user.ts:24:12)
+2025-10-13 18:50:50 [[31merror[39m]: [31mINSERT has more target columns than expressions[39m
+Stack: error: [31mINSERT has more target columns than expressions[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 18:51:16 [[31merror[39m]: [31mClient has already been connected. You cannot reuse a client.[39m
+Stack: Error: [31mClient has already been connected. You cannot reuse a client.[39m
+    at Client._connect (/app/node_modules/pg/lib/client.js:95:19)
+    at /app/node_modules/pg/lib/client.js:171:12
+    at new Promise (<anonymous>)
+    at Client.connect (/app/node_modules/pg/lib/client.js:170:12)
+    at /app/src/controllers/user.ts:16:18
+    at Generator.next (<anonymous>)
+    at /app/src/controllers/user.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/app/src/controllers/user.ts:4:12)
+    at registerController (/app/src/controllers/user.ts:24:12)
+2025-10-13 18:51:16 [[31merror[39m]: [31m[31mClient has already been connected. You cannot reuse a client.[31m[39m
+Stack: Error: [31mClient has already been connected. You cannot reuse a client.[39m
+    at Client._connect (/app/node_modules/pg/lib/client.js:95:19)
+    at /app/node_modules/pg/lib/client.js:171:12
+    at new Promise (<anonymous>)
+    at Client.connect (/app/node_modules/pg/lib/client.js:170:12)
+    at /app/src/controllers/user.ts:16:18
+    at Generator.next (<anonymous>)
+    at /app/src/controllers/user.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/app/src/controllers/user.ts:4:12)
+    at registerController (/app/src/controllers/user.ts:24:12)
+2025-10-13 18:52:38 [[31merror[39m]: [31mINSERT has more target columns than expressions[39m
+Stack: error: [31mINSERT has more target columns than expressions[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 18:55:47 [[31merror[39m]: [31mClient has already been connected. You cannot reuse a client.[39m
+Stack: Error: [31mClient has already been connected. You cannot reuse a client.[39m
+    at Client._connect (/app/node_modules/pg/lib/client.js:95:19)
+    at /app/node_modules/pg/lib/client.js:171:12
+    at new Promise (<anonymous>)
+    at Client.connect (/app/node_modules/pg/lib/client.js:170:12)
+    at /app/src/controllers/user.ts:16:18
+    at Generator.next (<anonymous>)
+    at /app/src/controllers/user.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/app/src/controllers/user.ts:4:12)
+    at registerController (/app/src/controllers/user.ts:24:12)
+2025-10-13 18:55:47 [[31merror[39m]: [31m[31mClient has already been connected. You cannot reuse a client.[31m[39m
+Stack: Error: [31mClient has already been connected. You cannot reuse a client.[39m
+    at Client._connect (/app/node_modules/pg/lib/client.js:95:19)
+    at /app/node_modules/pg/lib/client.js:171:12
+    at new Promise (<anonymous>)
+    at Client.connect (/app/node_modules/pg/lib/client.js:170:12)
+    at /app/src/controllers/user.ts:16:18
+    at Generator.next (<anonymous>)
+    at /app/src/controllers/user.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/app/src/controllers/user.ts:4:12)
+    at registerController (/app/src/controllers/user.ts:24:12)
+2025-10-13 18:56:06 [[31merror[39m]: [31mduplicate key value violates unique constraint "unique_username"[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 18:56:06 [[31merror[39m]: [31m[31mduplicate key value violates unique constraint "unique_username"[31m[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 18:56:06 [[31merror[39m]: [31m[31m[31mduplicate key value violates unique constraint "unique_username"[31m[31m[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 18:56:08 [[31merror[39m]: [31mClient has already been connected. You cannot reuse a client.[39m
+Stack: Error: [31mClient has already been connected. You cannot reuse a client.[39m
+    at Client._connect (/app/node_modules/pg/lib/client.js:95:19)
+    at /app/node_modules/pg/lib/client.js:171:12
+    at new Promise (<anonymous>)
+    at Client.connect (/app/node_modules/pg/lib/client.js:170:12)
+    at /app/src/controllers/user.ts:16:18
+    at Generator.next (<anonymous>)
+    at /app/src/controllers/user.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/app/src/controllers/user.ts:4:12)
+    at registerController (/app/src/controllers/user.ts:24:12)
+2025-10-13 18:56:08 [[31merror[39m]: [31m[31mClient has already been connected. You cannot reuse a client.[31m[39m
+Stack: Error: [31mClient has already been connected. You cannot reuse a client.[39m
+    at Client._connect (/app/node_modules/pg/lib/client.js:95:19)
+    at /app/node_modules/pg/lib/client.js:171:12
+    at new Promise (<anonymous>)
+    at Client.connect (/app/node_modules/pg/lib/client.js:170:12)
+    at /app/src/controllers/user.ts:16:18
+    at Generator.next (<anonymous>)
+    at /app/src/controllers/user.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/app/src/controllers/user.ts:4:12)
+    at registerController (/app/src/controllers/user.ts:24:12)
+2025-10-13 18:56:10 [[31merror[39m]: [31mClient has already been connected. You cannot reuse a client.[39m
+Stack: Error: [31mClient has already been connected. You cannot reuse a client.[39m
+    at Client._connect (/app/node_modules/pg/lib/client.js:95:19)
+    at /app/node_modules/pg/lib/client.js:171:12
+    at new Promise (<anonymous>)
+    at Client.connect (/app/node_modules/pg/lib/client.js:170:12)
+    at /app/src/controllers/user.ts:16:18
+    at Generator.next (<anonymous>)
+    at /app/src/controllers/user.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/app/src/controllers/user.ts:4:12)
+    at registerController (/app/src/controllers/user.ts:24:12)
+2025-10-13 18:56:10 [[31merror[39m]: [31m[31mClient has already been connected. You cannot reuse a client.[31m[39m
+Stack: Error: [31mClient has already been connected. You cannot reuse a client.[39m
+    at Client._connect (/app/node_modules/pg/lib/client.js:95:19)
+    at /app/node_modules/pg/lib/client.js:171:12
+    at new Promise (<anonymous>)
+    at Client.connect (/app/node_modules/pg/lib/client.js:170:12)
+    at /app/src/controllers/user.ts:16:18
+    at Generator.next (<anonymous>)
+    at /app/src/controllers/user.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/app/src/controllers/user.ts:4:12)
+    at registerController (/app/src/controllers/user.ts:24:12)
+2025-10-13 18:57:00 [[31merror[39m]: [31mduplicate key value violates unique constraint "unique_username"[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 18:57:00 [[31merror[39m]: [31m[31mduplicate key value violates unique constraint "unique_username"[31m[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 18:57:00 [[31merror[39m]: [31m[31m[31mduplicate key value violates unique constraint "unique_username"[31m[31m[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 18:57:02 [[31merror[39m]: [31mClient has already been connected. You cannot reuse a client.[39m
+Stack: Error: [31mClient has already been connected. You cannot reuse a client.[39m
+    at Client._connect (/app/node_modules/pg/lib/client.js:95:19)
+    at /app/node_modules/pg/lib/client.js:171:12
+    at new Promise (<anonymous>)
+    at Client.connect (/app/node_modules/pg/lib/client.js:170:12)
+    at /app/src/controllers/user.ts:16:18
+    at Generator.next (<anonymous>)
+    at /app/src/controllers/user.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/app/src/controllers/user.ts:4:12)
+    at registerController (/app/src/controllers/user.ts:24:12)
+2025-10-13 18:57:02 [[31merror[39m]: [31m[31mClient has already been connected. You cannot reuse a client.[31m[39m
+Stack: Error: [31mClient has already been connected. You cannot reuse a client.[39m
+    at Client._connect (/app/node_modules/pg/lib/client.js:95:19)
+    at /app/node_modules/pg/lib/client.js:171:12
+    at new Promise (<anonymous>)
+    at Client.connect (/app/node_modules/pg/lib/client.js:170:12)
+    at /app/src/controllers/user.ts:16:18
+    at Generator.next (<anonymous>)
+    at /app/src/controllers/user.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/app/src/controllers/user.ts:4:12)
+    at registerController (/app/src/controllers/user.ts:24:12)
+2025-10-13 18:57:03 [[31merror[39m]: [31mClient has already been connected. You cannot reuse a client.[39m
+Stack: Error: [31mClient has already been connected. You cannot reuse a client.[39m
+    at Client._connect (/app/node_modules/pg/lib/client.js:95:19)
+    at /app/node_modules/pg/lib/client.js:171:12
+    at new Promise (<anonymous>)
+    at Client.connect (/app/node_modules/pg/lib/client.js:170:12)
+    at /app/src/controllers/user.ts:16:18
+    at Generator.next (<anonymous>)
+    at /app/src/controllers/user.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/app/src/controllers/user.ts:4:12)
+    at registerController (/app/src/controllers/user.ts:24:12)
+2025-10-13 18:57:03 [[31merror[39m]: [31m[31mClient has already been connected. You cannot reuse a client.[31m[39m
+Stack: Error: [31mClient has already been connected. You cannot reuse a client.[39m
+    at Client._connect (/app/node_modules/pg/lib/client.js:95:19)
+    at /app/node_modules/pg/lib/client.js:171:12
+    at new Promise (<anonymous>)
+    at Client.connect (/app/node_modules/pg/lib/client.js:170:12)
+    at /app/src/controllers/user.ts:16:18
+    at Generator.next (<anonymous>)
+    at /app/src/controllers/user.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/app/src/controllers/user.ts:4:12)
+    at registerController (/app/src/controllers/user.ts:24:12)
+2025-10-13 19:12:49 [[31merror[39m]: [31mduplicate key value violates unique constraint "unique_username"[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 19:12:49 [[31merror[39m]: [31m[31mduplicate key value violates unique constraint "unique_username"[31m[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 19:12:49 [[31merror[39m]: [31m[31m[31mduplicate key value violates unique constraint "unique_username"[31m[31m[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 19:13:05 [[31merror[39m]: [31mduplicate key value violates unique constraint "unique_username"[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 19:13:05 [[31merror[39m]: [31m[31mduplicate key value violates unique constraint "unique_username"[31m[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 19:13:05 [[31merror[39m]: [31m[31m[31mduplicate key value violates unique constraint "unique_username"[31m[31m[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 19:12:53 [[31merror[39m]: [31mduplicate key value violates unique constraint "unique_username"[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 19:12:53 [[31merror[39m]: [31m[31mduplicate key value violates unique constraint "unique_username"[31m[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 19:12:53 [[31merror[39m]: [31m[31m[31mduplicate key value violates unique constraint "unique_username"[31m[31m[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 19:12:55 [[31merror[39m]: [31mduplicate key value violates unique constraint "unique_username"[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 19:12:55 [[31merror[39m]: [31m[31mduplicate key value violates unique constraint "unique_username"[31m[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 19:12:55 [[31merror[39m]: [31m[31m[31mduplicate key value violates unique constraint "unique_username"[31m[31m[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 19:28:44 [[31merror[39m]: [31moperator does not exist: character varying = integer[39m
+Stack: error: [31moperator does not exist: character varying = integer[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 19:28:44 [[31merror[39m]: [31m[31moperator does not exist: character varying = integer[31m[39m
+Stack: error: [31moperator does not exist: character varying = integer[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 19:29:36 [[31merror[39m]: [31moperator does not exist: character varying = integer[39m
+Stack: error: [31moperator does not exist: character varying = integer[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 19:29:36 [[31merror[39m]: [31m[31moperator does not exist: character varying = integer[31m[39m
+Stack: error: [31moperator does not exist: character varying = integer[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-14 16:04:03 [[31merror[39m]: [31musername is required sosal?[39m
+2025-10-14 16:04:03 [[31merror[39m]: [31m[31musername is required sosal?[31m[39m
+2025-10-14 17:34:49 [[31merror[39m]: [31mError in productCardController: Converting circular structure to JSON[39m
+[31m    --> starting at object with constructor 'Socket'[39m
+[31m    |     property 'parser' -> object with constructor 'HTTPParser'[39m
+[31m    --- property 'socket' closes the circle[39m
+Stack: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at /app/src/controllers/productCard.ts:15:24
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/controllers/productCard.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-14 17:34:49 [[31merror[39m]: [31mConverting circular structure to JSON[39m
+[31m    --> starting at object with constructor 'Socket'[39m
+[31m    |     property 'parser' -> object with constructor 'HTTPParser'[39m
+[31m    --- property 'socket' closes the circle[39m
+Stack: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at /app/src/controllers/productCard.ts:15:24
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/controllers/productCard.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-16 20:06:39 [[31merror[39m]: [31mSQL ERROR =>[39m
+[31m                    [39m
+[31m           select  [39m
+[31m            pc.id,[39m
+[31m            pc.description,[39m
+[31m            pc.create_user_id,[39m
+[31m            u.username,[39m
+[31m            pc.current_price,[39m
+[31m            pt."name" as product_type,[39m
+[31m            pt.id as product_type_id,[39m
+[31m            pc.create_date[39m
+[31m            from app.product_card pc [39m
+[31m            left join  ref.product_type pt  on pt.id = pc.product_type_id [39m
+[31m            left join hr."user" u  on u.id = pc.create_user_id [39m
+[31m            where true [39m
+[31m    [39m
+[31m            order by create_date  desc [39m
+[31m        [39m
+[31m                    [39m
+2025-10-16 20:06:39 [[31merror[39m]: [31mError in productCardController: bind message supplies 1 parameters, but prepared statement "" requires 0[39m
+Stack: error: bind message supplies 1 parameters, but prepared statement "" requires 0
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-16 20:06:39 [[31merror[39m]: [31mbind message supplies 1 parameters, but prepared statement "" requires 0[39m
+Stack: error: bind message supplies 1 parameters, but prepared statement "" requires 0
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-16 20:08:06 [[31merror[39m]: [31mSQL ERROR =>[39m
+[31m                    [39m
+[31m           select  [39m
+[31m            pc.id,[39m
+[31m            pc.description,[39m
+[31m            pc.create_user_id,[39m
+[31m            u.username,[39m
+[31m            pc.current_price,[39m
+[31m            pt."name" as product_type,[39m
+[31m            pt.id as product_type_id,[39m
+[31m            pc.create_date[39m
+[31m            from app.product_card pc [39m
+[31m            left join  ref.product_type pt  on pt.id = pc.product_type_id [39m
+[31m            left join hr."user" u  on u.id = pc.create_user_id [39m
+[31m            where true [39m
+[31m    [39m
+[31m            order by create_date  desc [39m
+[31m        [39m
+[31m                    [39m
+2025-10-16 20:08:06 [[31merror[39m]: [31mError in productCardController: bind message supplies 1 parameters, but prepared statement "" requires 0[39m
+Stack: error: bind message supplies 1 parameters, but prepared statement "" requires 0
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-16 20:08:06 [[31merror[39m]: [31mbind message supplies 1 parameters, but prepared statement "" requires 0[39m
+Stack: error: bind message supplies 1 parameters, but prepared statement "" requires 0
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)

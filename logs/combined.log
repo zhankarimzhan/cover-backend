@@ -1,0 +1,588 @@
+2025-10-13 21:45:17 [[34mdebug[39m]: [34mIncoming request: GET /api/1.0/ at 2025-10-13T16:45:17.095Z[39m
+2025-10-13 21:45:17 [[32minfo[39m]: [32m[2025-10-13T16:45:17.095Z] GET /api/1.0/ 404 - 6ms[39m
+2025-10-13 21:49:48 [[32minfo[39m]: [32m[2025-10-13T16:49:48.883Z] GET /api/1.0/ 404 - 4ms[39m
+2025-10-13 21:50:10 [[32minfo[39m]: [32m[2025-10-13 16:50:10.992Z] GET /api/1.0/ 404 - 4ms[39m
+2025-10-13 21:50:35 [[32minfo[39m]: [32m[2025-10-13 16:50:35.875,] GET /api/1.0/ 404 - 4ms[39m
+2025-10-13 21:50:57 [[32minfo[39m]: [32m2025-10-13 16:50:57.667 GET /api/1.0/ 404 - 4ms[39m
+2025-10-13 21:51:35 [[32minfo[39m]: [32m2025-10-13 16:51:35.549 GET /api/1.0/test/12 404 - 4ms[39m
+2025-10-13 21:51:42 [[32minfo[39m]: [32m2025-10-13 16:51:42.006 GET /test/12 404 - 1ms[39m
+2025-10-13 21:52:46 [[32minfo[39m]: [32m2025-10-13 16:52:46.388 GET /api/1.0/12 404 - 2ms[39m
+2025-10-13 18:35:06 [[32minfo[39m]: [32m2025-10-13 18:35:06.104 POST /api/1.0/register 201 - 53ms[39m
+2025-10-13 18:35:29 [[32minfo[39m]: [32m2025-10-13 18:35:29.428 POST /api/1.0/register 500 - 28ms[39m
+2025-10-13 18:35:30 [[32minfo[39m]: [32m2025-10-13 18:35:30.890 POST /api/1.0/register 500 - 2ms[39m
+2025-10-13 18:35:33 [[32minfo[39m]: [32m2025-10-13 18:35:33.272 POST /api/1.0/registe 404 - 1ms[39m
+2025-10-13 18:35:36 [[32minfo[39m]: [32m2025-10-13 18:35:36.352 POST /api/1.0/register 500 - 1ms[39m
+2025-10-13 18:35:39 [[32minfo[39m]: [32m2025-10-13 18:35:39.362 POST /api/1.0/registe 404 - 1ms[39m
+2025-10-13 18:35:49 [[32minfo[39m]: [32m2025-10-13 18:35:49.440 POST /api/1.0/registe 404 - 1ms[39m
+2025-10-13 18:35:51 [[32minfo[39m]: [32m2025-10-13 18:35:51.338 POST /api/1.0/register 500 - 2ms[39m
+2025-10-13 18:35:53 [[32minfo[39m]: [32m2025-10-13 18:35:53.186 POST /api/1.0/register 500 - 2ms[39m
+2025-10-13 18:36:04 [[32minfo[39m]: [32m2025-10-13 18:36:04.112 POST /api/1.0/register 500 - 2ms[39m
+2025-10-13 18:36:19 [[32minfo[39m]: [32m2025-10-13 18:36:19.800 POST /api/1.0/register 500 - 1ms[39m
+2025-10-13 18:37:44 [[32minfo[39m]: [32m2025-10-13 18:37:44.258 POST /api/1.0/register 500 - 1ms[39m
+2025-10-13 18:37:45 [[32minfo[39m]: [32m2025-10-13 18:37:45.619 POST /api/1.0/register 500 - 2ms[39m
+2025-10-13 18:38:15 [[32minfo[39m]: [32m2025-10-13 18:38:15.221 POST /api/1.0/register 500 - 4ms[39m
+2025-10-13 18:38:16 [[32minfo[39m]: [32m2025-10-13 18:38:16.491 POST /api/1.0/register 500 - 1ms[39m
+2025-10-13 18:40:17 [[32minfo[39m]: [32m2025-10-13 18:40:17.152 POST /api/1.0/register 500 - 1ms[39m
+2025-10-13 18:40:18 [[32minfo[39m]: [32m2025-10-13 18:40:18.800 POST /api/1.0/register 500 - 2ms[39m
+2025-10-13 18:40:46 [[32minfo[39m]: [32m2025-10-13 18:40:32.438 POST /api/1.0/register 201 - 13862ms[39m
+2025-10-13 18:43:37 [[32minfo[39m]: [32m2025-10-13 18:43:37.818 POST /api/1.0/register 201 - 38ms[39m
+2025-10-13 18:49:52 [[31merror[39m]: [31mINSERT has more target columns than expressions[39m
+Stack: error: [31mINSERT has more target columns than expressions[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 18:49:52 [[34mdebug[39m]: [34m[39m
+[34m    insert into hr.user (username,password,uuid) values ($1,$2)[39m
+[34m    [39m
+2025-10-13 18:49:52 [[34mdebug[39m]: [34m[[39m
+[34m  'user_2',[39m
+[34m  '$2b$10$IVaHCgcFFU4i5NVjWrdX1.gQpVEYfamCIPqCIBDI6zl4/bmM5d1iC'[39m
+[34m][39m
+2025-10-13 18:49:52 [[32minfo[39m]: [32m2025-10-13 18:49:52.039 POST /api/1.0/register 201 - 114ms[39m
+2025-10-13 18:50:04 [[31merror[39m]: [31mClient has already been connected. You cannot reuse a client.[39m
+Stack: Error: [31mClient has already been connected. You cannot reuse a client.[39m
+    at Client._connect (/app/node_modules/pg/lib/client.js:95:19)
+    at /app/node_modules/pg/lib/client.js:171:12
+    at new Promise (<anonymous>)
+    at Client.connect (/app/node_modules/pg/lib/client.js:170:12)
+    at /app/src/controllers/user.ts:16:18
+    at Generator.next (<anonymous>)
+    at /app/src/controllers/user.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/app/src/controllers/user.ts:4:12)
+    at registerController (/app/src/controllers/user.ts:24:12)
+2025-10-13 18:50:04 [[31merror[39m]: [31m[31mClient has already been connected. You cannot reuse a client.[31m[39m
+Stack: Error: [31mClient has already been connected. You cannot reuse a client.[39m
+    at Client._connect (/app/node_modules/pg/lib/client.js:95:19)
+    at /app/node_modules/pg/lib/client.js:171:12
+    at new Promise (<anonymous>)
+    at Client.connect (/app/node_modules/pg/lib/client.js:170:12)
+    at /app/src/controllers/user.ts:16:18
+    at Generator.next (<anonymous>)
+    at /app/src/controllers/user.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/app/src/controllers/user.ts:4:12)
+    at registerController (/app/src/controllers/user.ts:24:12)
+2025-10-13 18:50:04 [[32minfo[39m]: [32m2025-10-13 18:50:04.726 POST /api/1.0/register 500 - 6ms[39m
+2025-10-13 18:50:50 [[31merror[39m]: [31mINSERT has more target columns than expressions[39m
+Stack: error: [31mINSERT has more target columns than expressions[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 18:50:50 [[34mdebug[39m]: [34m[39m
+[34m    insert into hr.user (username,password,uuid) values ($1,$2)[39m
+[34m    [39m
+2025-10-13 18:50:50 [[34mdebug[39m]: [34m[[39m
+[34m  'user_2',[39m
+[34m  '$2b$10$AtbtnI1tAcfaNSo5HTUEzek/F4XsroyPzbT0dFadDykeMwBwt4kWK'[39m
+[34m][39m
+2025-10-13 18:50:50 [[32minfo[39m]: [32m2025-10-13 18:50:50.428 POST /api/1.0/register 201 - 99ms[39m
+2025-10-13 18:51:16 [[31merror[39m]: [31mClient has already been connected. You cannot reuse a client.[39m
+Stack: Error: [31mClient has already been connected. You cannot reuse a client.[39m
+    at Client._connect (/app/node_modules/pg/lib/client.js:95:19)
+    at /app/node_modules/pg/lib/client.js:171:12
+    at new Promise (<anonymous>)
+    at Client.connect (/app/node_modules/pg/lib/client.js:170:12)
+    at /app/src/controllers/user.ts:16:18
+    at Generator.next (<anonymous>)
+    at /app/src/controllers/user.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/app/src/controllers/user.ts:4:12)
+    at registerController (/app/src/controllers/user.ts:24:12)
+2025-10-13 18:51:16 [[31merror[39m]: [31m[31mClient has already been connected. You cannot reuse a client.[31m[39m
+Stack: Error: [31mClient has already been connected. You cannot reuse a client.[39m
+    at Client._connect (/app/node_modules/pg/lib/client.js:95:19)
+    at /app/node_modules/pg/lib/client.js:171:12
+    at new Promise (<anonymous>)
+    at Client.connect (/app/node_modules/pg/lib/client.js:170:12)
+    at /app/src/controllers/user.ts:16:18
+    at Generator.next (<anonymous>)
+    at /app/src/controllers/user.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/app/src/controllers/user.ts:4:12)
+    at registerController (/app/src/controllers/user.ts:24:12)
+2025-10-13 18:51:16 [[32minfo[39m]: [32m2025-10-13 18:51:16.210 POST /api/1.0/register 500 - 5ms[39m
+2025-10-13 18:52:38 [[31merror[39m]: [31mINSERT has more target columns than expressions[39m
+Stack: error: [31mINSERT has more target columns than expressions[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 18:52:38 [[34mdebug[39m]: [34m[39m
+[34m    insert into hr.user (username,password,uuid) values ($1,$2)[39m
+[34m    [39m
+2025-10-13 18:52:38 [[34mdebug[39m]: [34m[[39m
+[34m  'user_2',[39m
+[34m  '$2b$10$byCEuu151Qq2gNPXVvfvnOiHpOZd2kqQGnTKcZMezGZSl4u4ZB2Oq'[39m
+[34m][39m
+2025-10-13 18:52:38 [[32minfo[39m]: [32m2025-10-13 18:52:38.847 POST /api/1.0/register 201 - 89ms[39m
+2025-10-13 18:53:50 [[34mdebug[39m]: [34m{"username":"user_2","password":"$2b$10$MYuU1zoZPnaCI6R2ezF1ZuIsqe8BqNiRM/rKqHj8MfCx57u2h7.MG","uuid":"eea03e5f-5b56-4206-9660-42d4b1cbc106"}[39m
+2025-10-13 18:53:50 [[32minfo[39m]: [32m2025-10-13 18:53:50.542 POST /api/1.0/register 201 - 86ms[39m
+2025-10-13 18:55:47 [[31merror[39m]: [31mClient has already been connected. You cannot reuse a client.[39m
+Stack: Error: [31mClient has already been connected. You cannot reuse a client.[39m
+    at Client._connect (/app/node_modules/pg/lib/client.js:95:19)
+    at /app/node_modules/pg/lib/client.js:171:12
+    at new Promise (<anonymous>)
+    at Client.connect (/app/node_modules/pg/lib/client.js:170:12)
+    at /app/src/controllers/user.ts:16:18
+    at Generator.next (<anonymous>)
+    at /app/src/controllers/user.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/app/src/controllers/user.ts:4:12)
+    at registerController (/app/src/controllers/user.ts:24:12)
+2025-10-13 18:55:47 [[31merror[39m]: [31m[31mClient has already been connected. You cannot reuse a client.[31m[39m
+Stack: Error: [31mClient has already been connected. You cannot reuse a client.[39m
+    at Client._connect (/app/node_modules/pg/lib/client.js:95:19)
+    at /app/node_modules/pg/lib/client.js:171:12
+    at new Promise (<anonymous>)
+    at Client.connect (/app/node_modules/pg/lib/client.js:170:12)
+    at /app/src/controllers/user.ts:16:18
+    at Generator.next (<anonymous>)
+    at /app/src/controllers/user.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/app/src/controllers/user.ts:4:12)
+    at registerController (/app/src/controllers/user.ts:24:12)
+2025-10-13 18:55:47 [[32minfo[39m]: [32m2025-10-13 18:55:47.826 POST /api/1.0/register 500 - 12ms[39m
+2025-10-13 18:56:06 [[34mdebug[39m]: [34m{"username":"user_2","password":"$2b$10$HKaqVH0t1.IgFGYzCeNVK.3hSxJgmd3gE2834YQQ.j7DDMX.WMVV6","uuid":"c3a7cac8-0346-468a-b5c2-0c9d27b3eaa5"}[39m
+2025-10-13 18:56:06 [[31merror[39m]: [31mduplicate key value violates unique constraint "unique_username"[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 18:56:06 [[34mdebug[39m]: [34m[39m
+[34m    insert into hr.user (username,password,uuid) values ($1,$2,$3)[39m
+[34m    [39m
+2025-10-13 18:56:06 [[34mdebug[39m]: [34m[[39m
+[34m  'user_2',[39m
+[34m  '$2b$10$HKaqVH0t1.IgFGYzCeNVK.3hSxJgmd3gE2834YQQ.j7DDMX.WMVV6',[39m
+[34m  'c3a7cac8-0346-468a-b5c2-0c9d27b3eaa5'[39m
+[34m][39m
+2025-10-13 18:56:06 [[31merror[39m]: [31m[31mduplicate key value violates unique constraint "unique_username"[31m[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 18:56:06 [[31merror[39m]: [31m[31m[31mduplicate key value violates unique constraint "unique_username"[31m[31m[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 18:56:06 [[32minfo[39m]: [32m2025-10-13 18:56:06.630 POST /api/1.0/register 500 - 89ms[39m
+2025-10-13 18:56:08 [[31merror[39m]: [31mClient has already been connected. You cannot reuse a client.[39m
+Stack: Error: [31mClient has already been connected. You cannot reuse a client.[39m
+    at Client._connect (/app/node_modules/pg/lib/client.js:95:19)
+    at /app/node_modules/pg/lib/client.js:171:12
+    at new Promise (<anonymous>)
+    at Client.connect (/app/node_modules/pg/lib/client.js:170:12)
+    at /app/src/controllers/user.ts:16:18
+    at Generator.next (<anonymous>)
+    at /app/src/controllers/user.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/app/src/controllers/user.ts:4:12)
+    at registerController (/app/src/controllers/user.ts:24:12)
+2025-10-13 18:56:08 [[31merror[39m]: [31m[31mClient has already been connected. You cannot reuse a client.[31m[39m
+Stack: Error: [31mClient has already been connected. You cannot reuse a client.[39m
+    at Client._connect (/app/node_modules/pg/lib/client.js:95:19)
+    at /app/node_modules/pg/lib/client.js:171:12
+    at new Promise (<anonymous>)
+    at Client.connect (/app/node_modules/pg/lib/client.js:170:12)
+    at /app/src/controllers/user.ts:16:18
+    at Generator.next (<anonymous>)
+    at /app/src/controllers/user.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/app/src/controllers/user.ts:4:12)
+    at registerController (/app/src/controllers/user.ts:24:12)
+2025-10-13 18:56:08 [[32minfo[39m]: [32m2025-10-13 18:56:08.924 POST /api/1.0/register 500 - 5ms[39m
+2025-10-13 18:56:10 [[31merror[39m]: [31mClient has already been connected. You cannot reuse a client.[39m
+Stack: Error: [31mClient has already been connected. You cannot reuse a client.[39m
+    at Client._connect (/app/node_modules/pg/lib/client.js:95:19)
+    at /app/node_modules/pg/lib/client.js:171:12
+    at new Promise (<anonymous>)
+    at Client.connect (/app/node_modules/pg/lib/client.js:170:12)
+    at /app/src/controllers/user.ts:16:18
+    at Generator.next (<anonymous>)
+    at /app/src/controllers/user.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/app/src/controllers/user.ts:4:12)
+    at registerController (/app/src/controllers/user.ts:24:12)
+2025-10-13 18:56:10 [[31merror[39m]: [31m[31mClient has already been connected. You cannot reuse a client.[31m[39m
+Stack: Error: [31mClient has already been connected. You cannot reuse a client.[39m
+    at Client._connect (/app/node_modules/pg/lib/client.js:95:19)
+    at /app/node_modules/pg/lib/client.js:171:12
+    at new Promise (<anonymous>)
+    at Client.connect (/app/node_modules/pg/lib/client.js:170:12)
+    at /app/src/controllers/user.ts:16:18
+    at Generator.next (<anonymous>)
+    at /app/src/controllers/user.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/app/src/controllers/user.ts:4:12)
+    at registerController (/app/src/controllers/user.ts:24:12)
+2025-10-13 18:56:10 [[32minfo[39m]: [32m2025-10-13 18:56:10.208 POST /api/1.0/register 500 - 2ms[39m
+2025-10-13 18:57:00 [[34mdebug[39m]: [34m{"username":"user_2","password":"$2b$10$BOzYHvX7slaS3HR06H/WIO9C52ApwKKFIJp6VUVK8v00Y7/4ly67u","uuid":"d51f7070-e58a-45e4-a1de-e7dd65444b1e"}[39m
+2025-10-13 18:57:00 [[31merror[39m]: [31mduplicate key value violates unique constraint "unique_username"[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 18:57:00 [[34mdebug[39m]: [34m[39m
+[34m    insert into hr.user (username,password,uuid) values ($1,$2,$3)[39m
+[34m    [39m
+2025-10-13 18:57:00 [[34mdebug[39m]: [34m[[39m
+[34m  'user_2',[39m
+[34m  '$2b$10$BOzYHvX7slaS3HR06H/WIO9C52ApwKKFIJp6VUVK8v00Y7/4ly67u',[39m
+[34m  'd51f7070-e58a-45e4-a1de-e7dd65444b1e'[39m
+[34m][39m
+2025-10-13 18:57:00 [[31merror[39m]: [31m[31mduplicate key value violates unique constraint "unique_username"[31m[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 18:57:00 [[31merror[39m]: [31m[31m[31mduplicate key value violates unique constraint "unique_username"[31m[31m[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 18:57:00 [[32minfo[39m]: [32m2025-10-13 18:57:00.507 POST /api/1.0/register 500 - 102ms[39m
+2025-10-13 18:57:02 [[31merror[39m]: [31mClient has already been connected. You cannot reuse a client.[39m
+Stack: Error: [31mClient has already been connected. You cannot reuse a client.[39m
+    at Client._connect (/app/node_modules/pg/lib/client.js:95:19)
+    at /app/node_modules/pg/lib/client.js:171:12
+    at new Promise (<anonymous>)
+    at Client.connect (/app/node_modules/pg/lib/client.js:170:12)
+    at /app/src/controllers/user.ts:16:18
+    at Generator.next (<anonymous>)
+    at /app/src/controllers/user.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/app/src/controllers/user.ts:4:12)
+    at registerController (/app/src/controllers/user.ts:24:12)
+2025-10-13 18:57:02 [[31merror[39m]: [31m[31mClient has already been connected. You cannot reuse a client.[31m[39m
+Stack: Error: [31mClient has already been connected. You cannot reuse a client.[39m
+    at Client._connect (/app/node_modules/pg/lib/client.js:95:19)
+    at /app/node_modules/pg/lib/client.js:171:12
+    at new Promise (<anonymous>)
+    at Client.connect (/app/node_modules/pg/lib/client.js:170:12)
+    at /app/src/controllers/user.ts:16:18
+    at Generator.next (<anonymous>)
+    at /app/src/controllers/user.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/app/src/controllers/user.ts:4:12)
+    at registerController (/app/src/controllers/user.ts:24:12)
+2025-10-13 18:57:02 [[32minfo[39m]: [32m2025-10-13 18:57:02.303 POST /api/1.0/register 500 - 5ms[39m
+2025-10-13 18:57:03 [[31merror[39m]: [31mClient has already been connected. You cannot reuse a client.[39m
+Stack: Error: [31mClient has already been connected. You cannot reuse a client.[39m
+    at Client._connect (/app/node_modules/pg/lib/client.js:95:19)
+    at /app/node_modules/pg/lib/client.js:171:12
+    at new Promise (<anonymous>)
+    at Client.connect (/app/node_modules/pg/lib/client.js:170:12)
+    at /app/src/controllers/user.ts:16:18
+    at Generator.next (<anonymous>)
+    at /app/src/controllers/user.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/app/src/controllers/user.ts:4:12)
+    at registerController (/app/src/controllers/user.ts:24:12)
+2025-10-13 18:57:03 [[31merror[39m]: [31m[31mClient has already been connected. You cannot reuse a client.[31m[39m
+Stack: Error: [31mClient has already been connected. You cannot reuse a client.[39m
+    at Client._connect (/app/node_modules/pg/lib/client.js:95:19)
+    at /app/node_modules/pg/lib/client.js:171:12
+    at new Promise (<anonymous>)
+    at Client.connect (/app/node_modules/pg/lib/client.js:170:12)
+    at /app/src/controllers/user.ts:16:18
+    at Generator.next (<anonymous>)
+    at /app/src/controllers/user.ts:8:71
+    at new Promise (<anonymous>)
+    at __awaiter (/app/src/controllers/user.ts:4:12)
+    at registerController (/app/src/controllers/user.ts:24:12)
+2025-10-13 18:57:03 [[32minfo[39m]: [32m2025-10-13 18:57:03.608 POST /api/1.0/register 500 - 2ms[39m
+2025-10-13 19:12:49 [[34mdebug[39m]: [34m{"username":"user_2","password":"$2b$10$VqjHH.wrJYsrtrgw13WYneoclpgb/O2kZaG0pTTjbOREGCvemjOJ2","uuid":"03b4e690-f17d-49ae-af60-378427edaed4"}[39m
+2025-10-13 19:12:49 [[31merror[39m]: [31mduplicate key value violates unique constraint "unique_username"[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 19:12:49 [[34mdebug[39m]: [34m[39m
+[34m    insert into hr.user (username,password,uuid) values ($1,$2,$3)[39m
+[34m    [39m
+2025-10-13 19:12:49 [[34mdebug[39m]: [34m[[39m
+[34m  'user_2',[39m
+[34m  '$2b$10$VqjHH.wrJYsrtrgw13WYneoclpgb/O2kZaG0pTTjbOREGCvemjOJ2',[39m
+[34m  '03b4e690-f17d-49ae-af60-378427edaed4'[39m
+[34m][39m
+2025-10-13 19:12:49 [[31merror[39m]: [31m[31mduplicate key value violates unique constraint "unique_username"[31m[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 19:12:49 [[31merror[39m]: [31m[31m[31mduplicate key value violates unique constraint "unique_username"[31m[31m[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 19:12:49 [[32minfo[39m]: [32m2025-10-13 19:12:48.864 POST /api/1.0/register 500 - 232ms[39m
+2025-10-13 19:13:05 [[34mdebug[39m]: [34m{"username":"user_2","password":"$2b$10$gGHnZtNTb9WbvXHRnikeUO871qmobCk8RdRAvMXLIqXLAnRQlbO2.","uuid":"80b2da77-2b48-49ce-b070-ef8dfc19b235"}[39m
+2025-10-13 19:13:05 [[31merror[39m]: [31mduplicate key value violates unique constraint "unique_username"[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 19:13:05 [[34mdebug[39m]: [34m[39m
+[34m    insert into hr.user (username,password,uuid) values ($1,$2,$3)[39m
+[34m    [39m
+2025-10-13 19:13:05 [[34mdebug[39m]: [34m[[39m
+[34m  'user_2',[39m
+[34m  '$2b$10$gGHnZtNTb9WbvXHRnikeUO871qmobCk8RdRAvMXLIqXLAnRQlbO2.',[39m
+[34m  '80b2da77-2b48-49ce-b070-ef8dfc19b235'[39m
+[34m][39m
+2025-10-13 19:13:05 [[31merror[39m]: [31m[31mduplicate key value violates unique constraint "unique_username"[31m[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 19:13:05 [[31merror[39m]: [31m[31m[31mduplicate key value violates unique constraint "unique_username"[31m[31m[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 19:13:05 [[32minfo[39m]: [32m2025-10-13 19:12:52.161 POST /api/1.0/register 500 - 13748ms[39m
+2025-10-13 19:12:53 [[34mdebug[39m]: [34m{"username":"user_2","password":"$2b$10$bUEtRimA5lsJYPoaQhyHee/JKvyLXvKQ77QzOi3/pV.iUxZphlgIi","uuid":"a60a4228-b0d6-4d02-9ef5-3d440d40cf20"}[39m
+2025-10-13 19:12:53 [[31merror[39m]: [31mduplicate key value violates unique constraint "unique_username"[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 19:12:53 [[34mdebug[39m]: [34m[39m
+[34m    insert into hr.user (username,password,uuid) values ($1,$2,$3)[39m
+[34m    [39m
+2025-10-13 19:12:53 [[34mdebug[39m]: [34m[[39m
+[34m  'user_2',[39m
+[34m  '$2b$10$bUEtRimA5lsJYPoaQhyHee/JKvyLXvKQ77QzOi3/pV.iUxZphlgIi',[39m
+[34m  'a60a4228-b0d6-4d02-9ef5-3d440d40cf20'[39m
+[34m][39m
+2025-10-13 19:12:53 [[31merror[39m]: [31m[31mduplicate key value violates unique constraint "unique_username"[31m[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 19:12:53 [[31merror[39m]: [31m[31m[31mduplicate key value violates unique constraint "unique_username"[31m[31m[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 19:12:53 [[32minfo[39m]: [32m2025-10-13 19:12:53.791 POST /api/1.0/register 500 - 100ms[39m
+2025-10-13 19:12:55 [[34mdebug[39m]: [34m{"username":"user_2","password":"$2b$10$DfMZSEx05SPXioIUJ/HILONuhoiVthTLEvwBn/k9r/R3aKjvJUA52","uuid":"8591161f-c82f-44fe-8863-56a841c5add9"}[39m
+2025-10-13 19:12:55 [[31merror[39m]: [31mduplicate key value violates unique constraint "unique_username"[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 19:12:55 [[34mdebug[39m]: [34m[39m
+[34m    insert into hr.user (username,password,uuid) values ($1,$2,$3)[39m
+[34m    [39m
+2025-10-13 19:12:55 [[34mdebug[39m]: [34m[[39m
+[34m  'user_2',[39m
+[34m  '$2b$10$DfMZSEx05SPXioIUJ/HILONuhoiVthTLEvwBn/k9r/R3aKjvJUA52',[39m
+[34m  '8591161f-c82f-44fe-8863-56a841c5add9'[39m
+[34m][39m
+2025-10-13 19:12:55 [[31merror[39m]: [31m[31mduplicate key value violates unique constraint "unique_username"[31m[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 19:12:55 [[31merror[39m]: [31m[31m[31mduplicate key value violates unique constraint "unique_username"[31m[31m[39m
+Stack: error: [31mduplicate key value violates unique constraint "unique_username"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 19:12:55 [[32minfo[39m]: [32m2025-10-13 19:12:55.110 POST /api/1.0/register 500 - 96ms[39m
+2025-10-13 19:13:06 [[34mdebug[39m]: [34m{"username":"user_3","password":"$2b$10$JaHc9wz6YU6Uyh6npzVzJ.Q0.TgDddLmoTGUiJcTBdAVS71OOqRPO","uuid":"2e1e7fc3-71db-45b0-add4-fcc9bdd629e1"}[39m
+2025-10-13 19:13:06 [[32minfo[39m]: [32m2025-10-13 19:13:05.962 POST /api/1.0/register 201 - 104ms[39m
+2025-10-13 19:28:44 [[34mdebug[39m]: [34m{"username":"user_3"}[39m
+2025-10-13 19:28:44 [[31merror[39m]: [31moperator does not exist: character varying = integer[39m
+Stack: error: [31moperator does not exist: character varying = integer[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 19:28:44 [[34mdebug[39m]: [34m[39m
+[34m        select * from hr.user where true[39m
+[34m    [39m
+2025-10-13 19:28:44 [[34mdebug[39m]: [34m[ 'user_3' ][39m
+2025-10-13 19:28:44 [[31merror[39m]: [31m[31moperator does not exist: character varying = integer[31m[39m
+Stack: error: [31moperator does not exist: character varying = integer[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 19:28:44 [[32minfo[39m]: [32m2025-10-13 19:28:44.117 POST /api/1.0/auth/login 500 - 99ms[39m
+2025-10-13 19:29:36 [[34mdebug[39m]: [34m{"username":"user_3"}[39m
+2025-10-13 19:29:36 [[31merror[39m]: [31moperator does not exist: character varying = integer[39m
+Stack: error: [31moperator does not exist: character varying = integer[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 19:29:36 [[34mdebug[39m]: [34m[39m
+[34m        select * from hr.user where true[39m
+[34m    [39m
+2025-10-13 19:29:36 [[34mdebug[39m]: [34m[ 'user_3' ][39m
+2025-10-13 19:29:36 [[31merror[39m]: [31m[31moperator does not exist: character varying = integer[31m[39m
+Stack: error: [31moperator does not exist: character varying = integer[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-13 19:29:36 [[32minfo[39m]: [32m2025-10-13 19:29:36.600 POST /api/1.0/auth/login 500 - 78ms[39m
+2025-10-13 19:31:16 [[34mdebug[39m]: [34m{"username":"user_3"}[39m
+2025-10-13 19:31:16 [[32minfo[39m]: [32m2025-10-13 19:31:16.204 POST /api/1.0/auth/login 200 - 151ms[39m
+2025-10-13 19:31:21 [[34mdebug[39m]: [34m{"username":"user_3"}[39m
+2025-10-13 19:31:21 [[32minfo[39m]: [32m2025-10-13 19:31:21.123 POST /api/1.0/auth/login 401 - 92ms[39m
+2025-10-13 19:36:55 [[34mdebug[39m]: [34m{"username":"user_3"}[39m
+2025-10-13 19:36:55 [[32minfo[39m]: [32m2025-10-13 19:36:55.084 POST /api/1.0/auth/login 200 - 158ms[39m
+2025-10-13 19:37:31 [[34mdebug[39m]: [34m{"username":"user_3"}[39m
+2025-10-13 19:37:31 [[32minfo[39m]: [32m2025-10-13 19:37:31.621 POST /api/1.0/auth/login 200 - 138ms[39m
+2025-10-13 19:39:08 [[34mdebug[39m]: [34m{"username":"user_3"}[39m
+2025-10-13 19:39:08 [[32minfo[39m]: [32m2025-10-13 19:39:08.566 POST /api/1.0/auth/login 200 - 154ms[39m
+2025-10-13 19:41:20 [[34mdebug[39m]: [34m{"username":"user_3"}[39m
+2025-10-13 19:41:20 [[32minfo[39m]: [32m2025-10-13 19:41:20.769 POST /api/1.0/auth/login 200 - 130ms[39m
+2025-10-13 19:47:05 [[34mdebug[39m]: [34m{"username":"user_3"}[39m
+2025-10-13 19:47:05 [[32minfo[39m]: [32m2025-10-13 19:47:05.006 POST /api/1.0/auth/login 200 - 151ms[39m
+2025-10-13 19:47:11 [[32minfo[39m]: [32m2025-10-13 19:47:11.664 POST /api/1.0/test/2 401 - 2ms[39m
+2025-10-13 20:08:57 [[34mdebug[39m]: [34m{"username":"user_3"}[39m
+2025-10-13 20:08:57 [[32minfo[39m]: [32m2025-10-13 20:08:56.961 POST /api/1.0/auth/login 200 - 162ms[39m
+2025-10-13 20:09:19 [[32minfo[39m]: [32m2025-10-13 20:09:19.178 POST /api/1.0/refresh 401 - 2ms[39m
+2025-10-13 20:09:41 [[32minfo[39m]: [32m2025-10-13 20:09:41.633 POST /api/1.0/refresh 200 - 7ms[39m
+2025-10-14 15:57:22 [[34mdebug[39m]: [34m{"password":"$2b$10$ekMGgka7sqHB3F4RTB2kxurtRS69RHBHbEL/QQGbg09P8LNLN4x32","uuid":"20a362f1-47bb-42d7-ad81-a151f30ca35f"}[39m
+2025-10-14 15:57:22 [[32minfo[39m]: [32m2025-10-14 15:57:21.934 POST /api/1.0/register 401 - 125ms[39m
+2025-10-14 15:57:47 [[34mdebug[39m]: [34m{"password":"$2b$10$VYSCJS0Q97LKgh7NY.w3l.PljMpeJItn/1OT3PSh2aL.3SIy3G2ae","uuid":"0d102458-515b-4e22-ab2d-36ab299b47fb"}[39m
+2025-10-14 15:57:47 [[32minfo[39m]: [32m2025-10-14 15:57:46.991 POST /api/1.0/register 401 - 116ms[39m
+2025-10-14 15:58:52 [[34mdebug[39m]: [34m{"password":"$2b$10$NdaEaz0rMTHjc80jqyoAZeJlXaEkR4ECQ4w7I0CN9WSAFlb0xk.pG","uuid":"cfc186ec-aaba-4c84-967c-5406a57ce81e"}[39m
+2025-10-14 15:58:52 [[32minfo[39m]: [32m2025-10-14 15:58:52.538 POST /api/1.0/register 401 - 96ms[39m
+2025-10-14 15:59:39 [[34mdebug[39m]: [34m{"password":"$2b$10$PA2gbqANW7iIXeBJ0V/zFerJJZEDQhL3Tgpmm/g003.JTmiPs5X62","uuid":"8ea192ff-fa09-4303-92d6-6571ed4ae0d6"}[39m
+2025-10-14 15:59:39 [[32minfo[39m]: [32m2025-10-14 15:59:39.668 POST /api/1.0/register 401 - 142ms[39m
+2025-10-14 16:01:55 [[32minfo[39m]: [32m2025-10-14 16:01:55.318 POST /api/1.0/register 401 - 5ms[39m
+2025-10-14 16:02:26 [[34mdebug[39m]: [34m{"password":"$2b$10$68kXzvzpCUlC1OloSS8cWOVrHnk/.IPRubGrhJ1jLFumhIiQ3dB8C","uuid":"1cf22d27-ee0e-4e1d-8e70-e6923f24540a"}[39m
+2025-10-14 16:02:26 [[32minfo[39m]: [32m2025-10-14 16:02:26.645 POST /api/1.0/register 201 - 171ms[39m
+2025-10-14 16:04:03 [[31merror[39m]: [31musername is required sosal?[39m
+2025-10-14 16:04:03 [[31merror[39m]: [31m[31musername is required sosal?[31m[39m
+2025-10-14 16:04:03 [[32minfo[39m]: [32m2025-10-14 16:04:03.163 POST /api/1.0/register 400 - 53ms[39m
+2025-10-14 16:04:08 [[34mdebug[39m]: [34m{"username":"Azamat","password":"$2b$10$ABja33ZDkEd9RCro5KHx8ePdGJQJ9A6ERfHSkMsTp19YS.0DsdCwy","uuid":"de0b502c-3e8d-4360-a6dc-bfbe0bde1f39"}[39m
+2025-10-14 16:04:09 [[32minfo[39m]: [32m2025-10-14 16:04:08.890 POST /api/1.0/register 201 - 121ms[39m
+2025-10-14 16:04:24 [[34mdebug[39m]: [34m{"username":"Azamat"}[39m
+2025-10-14 16:04:24 [[32minfo[39m]: [32m2025-10-14 16:04:24.532 POST /api/1.0/auth/login 200 - 114ms[39m
+2025-10-14 16:04:27 [[34mdebug[39m]: [34m{"username":"Azamat"}[39m
+2025-10-14 16:04:27 [[32minfo[39m]: [32m2025-10-14 16:04:27.045 POST /api/1.0/auth/login 401 - 85ms[39m
+2025-10-14 17:22:22 [[34mdebug[39m]: [34m{"username":"Azamat"}[39m
+2025-10-14 17:22:22 [[32minfo[39m]: [32m2025-10-14 17:22:22.872 POST /api/1.0/auth/login 200 - 107ms[39m
+2025-10-14 17:23:00 [[32minfo[39m]: [32m2025-10-14 17:23:00.335 POST /api/1.0/product-card 401 - 1ms[39m
+2025-10-14 17:23:05 [[32minfo[39m]: [32m2025-10-14 17:23:05.820 POST /api/1.0/product-card 401 - 2ms[39m
+2025-10-14 17:23:06 [[32minfo[39m]: [32m2025-10-14 17:23:06.890 POST /api/1.0/product-card 401 - 1ms[39m
+2025-10-14 17:23:27 [[32minfo[39m]: [32m2025-10-14 17:23:27.817 POST /api/1.0/product-card 400 - 25ms[39m
+2025-10-14 17:23:50 [[32minfo[39m]: [32m2025-10-14 17:23:50.348 POST /api/1.0/product-card 400 - 11ms[39m
+2025-10-14 17:24:11 [[32minfo[39m]: [32m2025-10-14 17:24:11.407 POST /api/1.0/product-card 400 - 10ms[39m
+2025-10-14 17:24:26 [[32minfo[39m]: [32m2025-10-14 17:24:26.399 POST /api/1.0/product-card 201 - 28ms[39m
+2025-10-14 17:24:54 [[32minfo[39m]: [32m2025-10-14 17:24:54.154 POST /api/1.0/product-card 201 - 13ms[39m
+2025-10-14 17:34:02 [[32minfo[39m]: [32m2025-10-14 17:34:02.094 POST /api/1.0/product-card 201 - 91ms[39m
+2025-10-14 17:34:49 [[31merror[39m]: [31mError in productCardController: Converting circular structure to JSON[39m
+[31m    --> starting at object with constructor 'Socket'[39m
+[31m    |     property 'parser' -> object with constructor 'HTTPParser'[39m
+[31m    --- property 'socket' closes the circle[39m
+Stack: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at /app/src/controllers/productCard.ts:15:24
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/controllers/productCard.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-14 17:34:49 [[31merror[39m]: [31mConverting circular structure to JSON[39m
+[31m    --> starting at object with constructor 'Socket'[39m
+[31m    |     property 'parser' -> object with constructor 'HTTPParser'[39m
+[31m    --- property 'socket' closes the circle[39m
+Stack: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'Socket'
+    |     property 'parser' -> object with constructor 'HTTPParser'
+    --- property 'socket' closes the circle
+    at JSON.stringify (<anonymous>)
+    at /app/src/controllers/productCard.ts:15:24
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/controllers/productCard.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-14 17:34:49 [[32minfo[39m]: [32m2025-10-14 17:34:49.456 POST /api/1.0/product-card 500 - 71ms[39m
+2025-10-14 19:18:00 [[32minfo[39m]: [32m2025-10-14 19:18:00.264 POST /api/1.0/product-card 401 - 18ms[39m
+2025-10-14 19:18:25 [[32minfo[39m]: [32m2025-10-14 19:18:25.427 POST /api/1.0/auth/login 401 - 3ms[39m
+2025-10-14 19:18:37 [[32minfo[39m]: [32m2025-10-14 19:18:37.080 POST /api/1.0/auth/login 401 - 1ms[39m
+2025-10-14 19:18:45 [[32minfo[39m]: [32m2025-10-14 19:18:45.352 POST /api/1.0/auth/login 401 - 2ms[39m
+2025-10-14 19:19:11 [[32minfo[39m]: [32m2025-10-14 19:19:11.928 POST /api/1.0/auth/login 401 - 1ms[39m
+2025-10-14 19:20:23 [[32minfo[39m]: [32m2025-10-14 19:20:23.970 POST /api/1.0/auth/login 401 - 7ms[39m
+2025-10-14 19:21:19 [[34mdebug[39m]: [34m{"username":"Azamat"}[39m
+2025-10-14 19:21:19 [[32minfo[39m]: [32m2025-10-14 19:21:19.045 POST /api/1.0/auth/login 200 - 138ms[39m
+2025-10-14 19:21:59 [[34mdebug[39m]: [34m{"id":82,"uuid":"de0b502c-3e8d-4360-a6dc-bfbe0bde1f39","username":"Azamat","iat":1760469679,"exp":1760470579}[39m
+2025-10-14 19:21:59 [[32minfo[39m]: [32m2025-10-14 19:21:59.190 POST /api/1.0/product-card 400 - 34ms[39m
+2025-10-14 19:23:45 [[34mdebug[39m]: [34m{"username":"Azamat"}[39m
+2025-10-14 19:23:46 [[32minfo[39m]: [32m2025-10-14 19:23:45.875 POST /api/1.0/auth/login 200 - 189ms[39m
+2025-10-14 19:24:23 [[34mdebug[39m]: [34m{"username":"Azamat","password":"password","user_id":82,"user_uuid":"de0b502c-3e8d-4360-a6dc-bfbe0bde1f39","iat":1760469826,"exp":1760470726}[39m
+2025-10-14 19:24:23 [[32minfo[39m]: [32m2025-10-14 19:24:23.197 POST /api/1.0/product-card 400 - 25ms[39m
+2025-10-14 19:24:10 [[34mdebug[39m]: [34m{"user_id":82,"user_uuid":"de0b502c-3e8d-4360-a6dc-bfbe0bde1f39","username":"Azamat","iat":1760469826,"exp":1760470726}[39m
+2025-10-14 19:24:10 [[32minfo[39m]: [32m2025-10-14 19:24:10.729 POST /api/1.0/product-card 400 - 24ms[39m
+2025-10-16 20:05:08 [[32minfo[39m]: [32m2025-10-16 20:05:08.423 GET /api/1.0/product-card 401 - 30ms[39m
+2025-10-16 20:05:16 [[32minfo[39m]: [32m2025-10-16 20:05:16.366 GET /api/1.0/product-card 404 - 16ms[39m
+2025-10-16 20:06:05 [[32minfo[39m]: [32m2025-10-16 20:06:05.911 GET /api/1.0/product-card 404 - 8ms[39m
+2025-10-16 20:06:07 [[32minfo[39m]: [32m2025-10-16 20:06:07.581 GET /api/1.0/product-card 404 - 2ms[39m
+2025-10-16 20:06:08 [[32minfo[39m]: [32m2025-10-16 20:06:08.599 GET /api/1.0/product-card 404 - 2ms[39m
+2025-10-16 20:06:39 [[34mdebug[39m]: [34m{}[39m
+2025-10-16 20:06:39 [[31merror[39m]: [31mSQL ERROR =>[39m
+[31m                    [39m
+[31m           select  [39m
+[31m            pc.id,[39m
+[31m            pc.description,[39m
+[31m            pc.create_user_id,[39m
+[31m            u.username,[39m
+[31m            pc.current_price,[39m
+[31m            pt."name" as product_type,[39m
+[31m            pt.id as product_type_id,[39m
+[31m            pc.create_date[39m
+[31m            from app.product_card pc [39m
+[31m            left join  ref.product_type pt  on pt.id = pc.product_type_id [39m
+[31m            left join hr."user" u  on u.id = pc.create_user_id [39m
+[31m            where true [39m
+[31m    [39m
+[31m            order by create_date  desc [39m
+[31m        [39m
+[31m                    [39m
+2025-10-16 20:06:39 [[31merror[39m]: [31mError in productCardController: bind message supplies 1 parameters, but prepared statement "" requires 0[39m
+Stack: error: bind message supplies 1 parameters, but prepared statement "" requires 0
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-16 20:06:39 [[31merror[39m]: [31mbind message supplies 1 parameters, but prepared statement "" requires 0[39m
+Stack: error: bind message supplies 1 parameters, but prepared statement "" requires 0
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-16 20:06:39 [[32minfo[39m]: [32m2025-10-16 20:06:39.294 GET /api/1.0/product-card 500 - 56ms[39m
+2025-10-16 20:08:06 [[34mdebug[39m]: [34m{}[39m
+2025-10-16 20:08:06 [[31merror[39m]: [31mSQL ERROR =>[39m
+[31m                    [39m
+[31m           select  [39m
+[31m            pc.id,[39m
+[31m            pc.description,[39m
+[31m            pc.create_user_id,[39m
+[31m            u.username,[39m
+[31m            pc.current_price,[39m
+[31m            pt."name" as product_type,[39m
+[31m            pt.id as product_type_id,[39m
+[31m            pc.create_date[39m
+[31m            from app.product_card pc [39m
+[31m            left join  ref.product_type pt  on pt.id = pc.product_type_id [39m
+[31m            left join hr."user" u  on u.id = pc.create_user_id [39m
+[31m            where true [39m
+[31m    [39m
+[31m            order by create_date  desc [39m
+[31m        [39m
+[31m                    [39m
+2025-10-16 20:08:06 [[31merror[39m]: [31mError in productCardController: bind message supplies 1 parameters, but prepared statement "" requires 0[39m
+Stack: error: bind message supplies 1 parameters, but prepared statement "" requires 0
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-16 20:08:06 [[31merror[39m]: [31mbind message supplies 1 parameters, but prepared statement "" requires 0[39m
+Stack: error: bind message supplies 1 parameters, but prepared statement "" requires 0
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-16 20:08:06 [[32minfo[39m]: [32m2025-10-16 20:08:06.281 GET /api/1.0/product-card 500 - 32ms[39m
+2025-10-16 20:08:33 [[34mdebug[39m]: [34m{}[39m
+2025-10-16 20:08:33 [[32minfo[39m]: [32m2025-10-16 20:08:33.910 GET /api/1.0/product-card 201 - 75ms[39m
+2025-10-16 20:09:45 [[34mdebug[39m]: [34m{}[39m
+2025-10-16 20:09:45 [[32minfo[39m]: [32m2025-10-16 20:09:45.273 GET /api/1.0/product-card 200 - 56ms[39m
+2025-10-17 18:17:32 [[34mdebug[39m]: [34m{}[39m
+2025-10-17 18:17:32 [[32minfo[39m]: [32m2025-10-17 18:17:32.308 GET /api/1.0/product-card 200 - 85ms[39m
+2025-10-17 18:17:42 [[34mdebug[39m]: [34m{}[39m
+2025-10-17 18:17:42 [[32minfo[39m]: [32m2025-10-17 18:17:42.586 GET /api/1.0/product-card 200 - 35ms[39m
+2025-10-17 18:17:57 [[34mdebug[39m]: [34m{}[39m
+2025-10-17 18:17:57 [[32minfo[39m]: [32m2025-10-17 18:17:57.783 GET /api/1.0/product-card 200 - 14ms[39m
+2025-10-17 18:17:58 [[34mdebug[39m]: [34m{}[39m
+2025-10-17 18:17:58 [[32minfo[39m]: [32m2025-10-17 18:17:58.648 GET /api/1.0/product-card 200 - 16ms[39m
+2025-10-17 18:20:05 [[32minfo[39m]: [32m2025-10-17 18:20:05.240 GET /api/1.0/product-card 404 - 9ms[39m
+2025-10-17 18:20:15 [[32minfo[39m]: [32m2025-10-17 18:20:15.603 GET /api/1.0/product-card 404 - 3ms[39m
+2025-10-17 18:20:54 [[34mdebug[39m]: [34m{}[39m
+2025-10-17 18:20:54 [[32minfo[39m]: [32m2025-10-17 18:20:54.707 GET /api/1.0/product-card 200 - 75ms[39m
+2025-10-17 18:21:06 [[34mdebug[39m]: [34m{}[39m
+2025-10-17 18:21:06 [[32minfo[39m]: [32m2025-10-17 18:21:06.195 GET /api/1.0/product-card 200 - 15ms[39m
+2025-10-17 18:21:35 [[32minfo[39m]: [32m2025-10-17 18:21:35.931 GET /api/1.0/product-card 404 - 9ms[39m
+2025-10-17 18:21:44 [[32minfo[39m]: [32m2025-10-17 18:21:44.375 GET /api/1.0/product-card 404 - 1ms[39m
+2025-10-17 18:22:53 [[34mdebug[39m]: [34m{}[39m
+2025-10-17 18:22:53 [[32minfo[39m]: [32m2025-10-17 18:22:53.173 GET /api/1.0/product-card 200 - 57ms[39m
+2025-10-17 18:23:02 [[34mdebug[39m]: [34m{}[39m
+2025-10-17 18:23:02 [[32minfo[39m]: [32m2025-10-17 18:23:02.470 GET /api/1.0/product-card 200 - 16ms[39m
+2025-10-17 18:26:40 [[34mdebug[39m]: [34m{}[39m
+2025-10-17 18:26:40 [[32minfo[39m]: [32m2025-10-17 18:26:40.126 GET /api/1.0/product-card 200 - 104ms[39m
+2025-10-17 18:27:02 [[32minfo[39m]: [32m2025-10-17 18:27:02.476 GET /api/1.0/product-card 404 - 10ms[39m
+2025-10-17 18:27:23 [[34mdebug[39m]: [34m{}[39m
+2025-10-17 18:27:23 [[32minfo[39m]: [32m2025-10-17 18:27:23.728 GET /api/1.0/product-card 200 - 54ms[39m
