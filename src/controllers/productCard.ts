@@ -5,6 +5,7 @@ import { NextFunction, Request, Response } from "express";
 import { createBind } from "../utills/bind";
 import getClient from "../db_apis/db";
 import { product_card_create_db, product_card_get_db, product_card_put_db } from "../db_apis/productCard";
+import { post_product_card_comments_db, product_card_comments_db } from "../db_apis/productCardComments";
 
 
 export async function productCardPost(req: Request, res: Response, next: NextFunction) {
@@ -110,20 +111,33 @@ export async function productCardCommentsGet(req: Request, res: Response, next: 
         client = await getClient();
         await client.connect();
         const bind = createBind(req);
-        log.debug(JSON.stringify(bind))
-        const { id } = bind;
-
-      
-   
-        const data = await product_card_get_db(bind, client);
-
+        const data = await product_card_comments_db(bind, client);
         res.status(HttpStatus.OK).json({
             statusCode: HttpStatus.OK,
             message: "Product data",
             data
         });
     } catch (error: any) {
-        log.error("Error in productCardController:", error);
+        log.error("Error in productCardCommentsGet:", error);
+        next(error);
+    } finally {
+        await client?.end();
+    }
+}
+export async function productCardCommentsPost(req: Request, res: Response, next: NextFunction) {
+    let client;
+    try {
+        client = await getClient();
+        await client.connect();
+        const bind = createBind(req);
+        const data = await post_product_card_comments_db(bind, client);
+        res.status(HttpStatus.OK).json({
+            statusCode: HttpStatus.OK,
+            message: "Product data",
+            data
+        });
+    } catch (error: any) {
+        log.error("Error in productCardCommentsPost:", error);
         next(error);
     } finally {
         await client?.end();

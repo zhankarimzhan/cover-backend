@@ -128,9 +128,6 @@ export async function product_card_get_db(bind: any, client: Client) {
         throw error;
     }
 }
-
-
-
 export async function product_card_put_db (bind : any, client: any) {
     const { id, name, product_type_id, current_price } = bind;
 
@@ -163,8 +160,6 @@ export async function product_card_put_db (bind : any, client: any) {
             log.error(error)
         }
 }
-
-
 export async function product_card_history_post_db (bind : any, client: any) {
     const { id, name, product_type_id, current_price } = bind;
 
