@@ -9,11 +9,11 @@ services:
     env_file:
       - .env
     volumes:
-      - .:/app        # 👈 подключаем код с хоста
-      - /app/node_modules   # ✅ обязательный внутренний том
-
+      - .:/app               # 👈 подключаем код с хоста
+      - /app/node_modules    # ✅ внутренний том
     depends_on:
       - db
+      - minio                # 👈 ждём MinIO
     restart: unless-stopped
 
   db:
@@ -28,5 +28,20 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
+  minio:
+    image: minio/minio:latest
+    container_name: project-minio
+    command: server /data --console-address ":9001"
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:-minioadmin}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:-minioadmin123}
+    ports:
+      - "9000:9000"   # S3 API
+      - "9001:9001"   # Web UI (MinIO Console)
+    volumes:
+      - minio_data:/data
+    restart: unless-stopped
+
 volumes:
   postgres_data:
+  minio_data:
