@@ -10,7 +10,7 @@ exports.up = function(knex) {
 	username varchar(255),
 	password varchar(255),
 	uuid varchar(255)
-)
+) 
 
     `)
 };

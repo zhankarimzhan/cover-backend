@@ -1,12 +1,7 @@
 exports.up = function (knex) {
   return knex.raw(`
 
-CREATE TABLE hr."user" (
-  id serial PRIMARY KEY,
-  username varchar(255),
-  password varchar(255),
-  uuid varchar(255)
-);
+
 
 CREATE TABLE ref.product_type (
   id serial PRIMARY KEY,

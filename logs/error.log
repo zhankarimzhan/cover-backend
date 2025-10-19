@@ -444,3 +444,93 @@ Stack: SyntaxError: Unexpected token } in JSON at position 72
     at IncomingMessage.emit (node:events:517:28)
     at IncomingMessage.emit (node:domain:489:12)
     at endReadableNT (node:internal/streams/readable:1400:12)
+2025-10-19 17:58:46 [[31merror[39m]: [31mrelation "hr.user" does not exist[39m
+Stack: error: [31mrelation "hr.user" does not exist[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-19 17:58:46 [[31merror[39m]: [31m[31mrelation "hr.user" does not exist[31m[39m
+Stack: error: [31mrelation "hr.user" does not exist[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-19 18:07:53 [[31merror[39m]: [31mError in productCardController: file type is required[39m
+2025-10-19 18:07:53 [[31merror[39m]: [31mfile type is required[39m
+2025-10-19 18:08:00 [[31merror[39m]: [31mError in productCardController: file type is required[39m
+2025-10-19 18:08:00 [[31merror[39m]: [31mfile type is required[39m
+2025-10-19 18:08:07 [[31merror[39m]: [31mError in productCardController: file type is required[39m
+2025-10-19 18:08:07 [[31merror[39m]: [31mfile type is required[39m
+2025-10-19 18:08:13 [[31merror[39m]: [31mError in productCardController: id is required[39m
+2025-10-19 18:08:13 [[31merror[39m]: [31mid is required[39m
+2025-10-19 18:08:20 [[31merror[39m]: [31mError in productCardController: syntax error at or near "id"[39m
+Stack: error: syntax error at or near "id"
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-19 18:08:20 [[31merror[39m]: [31msyntax error at or near "id"[39m
+Stack: error: syntax error at or near "id"
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-19 18:09:05 [[31merror[39m]: [31mError in productCardController: Cannot read properties of undefined (reading 'originalname')[39m
+Stack: TypeError: Cannot read properties of undefined (reading 'originalname')
+    at /app/src/db_apis/file.ts:40:35
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/db_apis/file.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-19 18:09:05 [[31merror[39m]: [31mCannot read properties of undefined (reading 'originalname')[39m
+Stack: TypeError: Cannot read properties of undefined (reading 'originalname')
+    at /app/src/db_apis/file.ts:40:35
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/db_apis/file.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-19 18:09:55 [[31merror[39m]: [31mError in productCardController: Cannot read properties of undefined (reading 'originalname')[39m
+Stack: TypeError: Cannot read properties of undefined (reading 'originalname')
+    at /app/src/db_apis/file.ts:41:35
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/db_apis/file.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-19 18:09:55 [[31merror[39m]: [31mCannot read properties of undefined (reading 'originalname')[39m
+Stack: TypeError: Cannot read properties of undefined (reading 'originalname')
+    at /app/src/db_apis/file.ts:41:35
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/db_apis/file.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-19 18:20:03 [[31merror[39m]: [31mError in productCardController: relation "ref.file_type" does not exist[39m
+Stack: error: relation "ref.file_type" does not exist
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-19 18:20:03 [[31merror[39m]: [31mrelation "ref.file_type" does not exist[39m
+Stack: error: relation "ref.file_type" does not exist
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-19 18:21:20 [[31merror[39m]: [31mError in productCardController: Файл не найден. Используй form-data с ключом 'file'[39m
+2025-10-19 18:21:20 [[31merror[39m]: [31mФайл не найден. Используй form-data с ключом 'file'[39m
+2025-10-19 18:21:30 [[31merror[39m]: [31mError in productCardController: Файл не найден. Используй form-data с ключом 'file'[39m
+2025-10-19 18:21:30 [[31merror[39m]: [31mФайл не найден. Используй form-data с ключом 'file'[39m
+2025-10-19 18:24:08 [[31merror[39m]: [31mError in productCardController: connect ECONNREFUSED 127.0.0.1:9000[39m
+Stack: Error: connect ECONNREFUSED 127.0.0.1:9000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+2025-10-19 18:24:08 [[31merror[39m]: [31mconnect ECONNREFUSED 127.0.0.1:9000[39m
+Stack: Error: connect ECONNREFUSED 127.0.0.1:9000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+2025-10-19 18:25:21 [[31merror[39m]: [31mError in productCardController: connect ECONNREFUSED 127.0.0.1:9000[39m
+Stack: Error: connect ECONNREFUSED 127.0.0.1:9000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+2025-10-19 18:25:21 [[31merror[39m]: [31mconnect ECONNREFUSED 127.0.0.1:9000[39m
+Stack: Error: connect ECONNREFUSED 127.0.0.1:9000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+2025-10-19 18:28:20 [[31merror[39m]: [31mError in productCardController: The specified bucket does not exist[39m
+Stack: S3Error: The specified bucket does not exist
+    at parseError (/app/node_modules/minio/dist/main/internal/xml-parser.ts:49:13)
+    at Object.parseResponseError (/app/node_modules/minio/dist/main/internal/xml-parser.ts:107:11)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.makeRequestStreamAsync (/app/node_modules/minio/dist/main/internal/client.ts:740:19)
+    at async Client.getBucketRegionAsync (/app/node_modules/minio/dist/main/internal/client.ts:794:19)
+    at async Client.makeRequestStreamAsync (/app/node_modules/minio/dist/main/internal/client.ts:710:25)
+    at async Client.uploadBuffer (/app/node_modules/minio/dist/main/internal/client.ts:1687:17)
+2025-10-19 18:28:20 [[31merror[39m]: [31mThe specified bucket does not exist[39m
+Stack: S3Error: The specified bucket does not exist
+    at parseError (/app/node_modules/minio/dist/main/internal/xml-parser.ts:49:13)
+    at Object.parseResponseError (/app/node_modules/minio/dist/main/internal/xml-parser.ts:107:11)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.makeRequestStreamAsync (/app/node_modules/minio/dist/main/internal/client.ts:740:19)
+    at async Client.getBucketRegionAsync (/app/node_modules/minio/dist/main/internal/client.ts:794:19)
+    at async Client.makeRequestStreamAsync (/app/node_modules/minio/dist/main/internal/client.ts:710:25)
+    at async Client.uploadBuffer (/app/node_modules/minio/dist/main/internal/client.ts:1687:17)
