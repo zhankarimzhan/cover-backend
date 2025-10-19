@@ -32,6 +32,11 @@ export async function productCardPost(req: Request, res: Response, next: NextFun
    
         const data = await product_card_create_db(bind, client);
 
+         const io = req.app.get("io");
+        io.emit("product_created", data);
+
+        
+
         res.status(HttpStatus.CREATED).json({
             statusCode: HttpStatus.CREATED,
             message: "Product card created",

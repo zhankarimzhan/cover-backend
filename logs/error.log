@@ -348,3 +348,99 @@ Stack: error: bind message supplies 1 parameters, but prepared statement "" requ
 Stack: error: bind message supplies 1 parameters, but prepared statement "" requires 0
     at /app/node_modules/pg/lib/client.js:545:17
     at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-19 15:43:52 [[31merror[39m]: [31mrelation "hr.user" does not exist[39m
+Stack: error: [31mrelation "hr.user" does not exist[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-19 15:43:52 [[31merror[39m]: [31m[31mrelation "hr.user" does not exist[31m[39m
+Stack: error: [31mrelation "hr.user" does not exist[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-19 15:49:00 [[31merror[39m]: [31mUnexpected token } in JSON at position 51[39m
+Stack: SyntaxError: Unexpected token } in JSON at position 51
+    at JSON.parse (<anonymous>)
+    at parse (/app/node_modules/body-parser/lib/types/json.js:77:19)
+    at /app/node_modules/body-parser/lib/read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+    at invokeCallback (/app/node_modules/raw-body/index.js:238:16)
+    at done (/app/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/app/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:517:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+2025-10-19 15:49:10 [[31merror[39m]: [31mSQL ERROR =>[39m
+[31m                    [39m
+[31m            INSERT INTO app.product_card [39m
+[31m                (name, description, create_user_id, product_type_id, current_price)[39m
+[31m            VALUES ($1, $2, $3, $4, $5)[39m
+[31m            RETURNING id, name, description, product_type_id, current_price, create_date[39m
+[31m        [39m
+[31m                    test,,,1,50[39m
+2025-10-19 15:49:10 [[31merror[39m]: [31mError in productCardController: insert or update on table "product_card" violates foreign key constraint "product_card_product_type_id_fkey"[39m
+Stack: error: insert or update on table "product_card" violates foreign key constraint "product_card_product_type_id_fkey"
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-19 15:49:10 [[31merror[39m]: [31minsert or update on table "product_card" violates foreign key constraint "product_card_product_type_id_fkey"[39m
+Stack: error: insert or update on table "product_card" violates foreign key constraint "product_card_product_type_id_fkey"
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-19 15:50:02 [[31merror[39m]: [31mUnexpected token } in JSON at position 76[39m
+Stack: SyntaxError: Unexpected token } in JSON at position 76
+    at JSON.parse (<anonymous>)
+    at parse (/app/node_modules/body-parser/lib/types/json.js:77:19)
+    at /app/node_modules/body-parser/lib/read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+    at invokeCallback (/app/node_modules/raw-body/index.js:238:16)
+    at done (/app/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/app/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:517:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+2025-10-19 15:50:07 [[31merror[39m]: [31mError in productCardController: Cannot read properties of undefined (reading 'emit')[39m
+Stack: TypeError: Cannot read properties of undefined (reading 'emit')
+    at /app/src/controllers/productCard.ts:36:12
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/controllers/productCard.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-19 15:50:07 [[31merror[39m]: [31mCannot read properties of undefined (reading 'emit')[39m
+Stack: TypeError: Cannot read properties of undefined (reading 'emit')
+    at /app/src/controllers/productCard.ts:36:12
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/controllers/productCard.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-19 15:50:13 [[31merror[39m]: [31mUnexpected token } in JSON at position 72[39m
+Stack: SyntaxError: Unexpected token } in JSON at position 72
+    at JSON.parse (<anonymous>)
+    at parse (/app/node_modules/body-parser/lib/types/json.js:77:19)
+    at /app/node_modules/body-parser/lib/read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+    at invokeCallback (/app/node_modules/raw-body/index.js:238:16)
+    at done (/app/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/app/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:517:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+2025-10-19 15:51:41 [[31merror[39m]: [31mUnexpected token } in JSON at position 72[39m
+Stack: SyntaxError: Unexpected token } in JSON at position 72
+    at JSON.parse (<anonymous>)
+    at parse (/app/node_modules/body-parser/lib/types/json.js:77:19)
+    at /app/node_modules/body-parser/lib/read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+    at invokeCallback (/app/node_modules/raw-body/index.js:238:16)
+    at done (/app/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/app/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:517:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1400:12)
+2025-10-19 15:55:28 [[31merror[39m]: [31mUnexpected token } in JSON at position 72[39m
+Stack: SyntaxError: Unexpected token } in JSON at position 72
+    at JSON.parse (<anonymous>)
+    at parse (/app/node_modules/body-parser/lib/types/json.js:77:19)
+    at /app/node_modules/body-parser/lib/read.js:123:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:203:9)
+    at invokeCallback (/app/node_modules/raw-body/index.js:238:16)
+    at done (/app/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/app/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:517:28)
+    at IncomingMessage.emit (node:domain:489:12)
+    at endReadableNT (node:internal/streams/readable:1400:12)
