@@ -1,0 +1,11 @@
+
+create 
+npx knex migrate:latest
+
+run
+
+npx knex migrate:latest
+
+rollback
+
+npx knex migrate:rollback
