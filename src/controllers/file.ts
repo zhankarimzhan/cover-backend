@@ -32,11 +32,9 @@ export async function filePost(req: Request, res: Response, next: NextFunction) 
                 message : 'id is required'
             }
         }
-        let  { id,file_type } = bind;
-        let  bucket_name = await get_file_bucket(client,file_type)
+        let { id,file_type } = bind;
+        let bucket_name = await get_file_bucket(client,file_type)
         
-        log.debug(bucket_name)
-        log.debug(JSON.stringify(req.file))
         if (!req.file) {
             throw {
                 code: HttpStatus.BAD_REQUEST,
@@ -47,7 +45,8 @@ export async function filePost(req: Request, res: Response, next: NextFunction) 
         const fileBuffer = req.file.buffer;
 
         const fileName = req.file.originalname;
-        let file_id  = await post_file_db(client,{fileName, file_type})
+
+        let file_id  = await post_file_db(client,{name : fileName, file_type_Id: file_type})
 
         let bucketName : any = bucket_name
     
@@ -57,7 +56,7 @@ export async function filePost(req: Request, res: Response, next: NextFunction) 
             fileBuffer
         );
 
-        await post_object_file_db(client,{id, file_id})
+        await post_object_file_db(client,{object_id : id, file_id : file_id})
 
         let data = file_id
         res.status(HttpStatus.OK).json({
@@ -77,15 +76,28 @@ export async function objectFileGet(req: Request, res: Response, next: NextFunct
     let client
     try {
         client = await getClient()
+        await client.connect()
         let bind = createBind(req)
         const {
             id, file_type
         } = bind
+        
+        let fileData =  await object_file_get_db(client,{object_id : id,file_type})
+        let objectName = `${fileData.file_id}_${fileData.name}`
+        log.info(objectName)
+         const url = await minioClient.presignedGetObject(
+            fileData.bucket_name,
+            objectName,
+            60 * 60
+        );
+        log.info(url)
+         res.status(HttpStatus.OK).json({
+            statusCode: HttpStatus.OK,
+            message: "file data",
+            data : {link : url}
+        });
 
-        let fileData =  await object_file_get_db(client,{id,file_type})
 
-        let filedata = minioClient.getObject(fileData.bucket_name,`${fileData.file_id}_${fileData.name}`)
-        return fileData
     } catch (error) {
         log.error(error)
     }

@@ -26,7 +26,8 @@ router.post('/product-card/comments/:id',productCardCommentsPost)
 
 
 router.post('/file/:id', filePost)
-router.get('/file',objectFileGet)
+router.get('/file/:id',objectFileGet)
+
 
 
 export default router;

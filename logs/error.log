@@ -590,3 +590,113 @@ Stack: Error: connect ECONNREFUSED 127.0.0.1:9000
 2025-10-22 17:10:17 [[31merror[39m]: [31mconnect ECONNREFUSED 127.0.0.1:9000[39m
 Stack: Error: connect ECONNREFUSED 127.0.0.1:9000
     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+2025-10-22 17:24:10 [[31merror[39m]: [31minvalid input syntax for type integer: "{"1","maxresdefault.jpg"}"[39m
+Stack: error: [31minvalid input syntax for type integer: "{"1","maxresdefault.jpg"}"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 17:24:10 [[31merror[39m]: [31mError in productCardController: The specified bucket does not exist[39m
+Stack: S3Error: The specified bucket does not exist
+    at parseError (/app/node_modules/minio/dist/main/internal/xml-parser.ts:49:13)
+    at Object.parseResponseError (/app/node_modules/minio/dist/main/internal/xml-parser.ts:107:11)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.makeRequestStreamAsync (/app/node_modules/minio/dist/main/internal/client.ts:740:19)
+    at async Client.getBucketRegionAsync (/app/node_modules/minio/dist/main/internal/client.ts:794:19)
+    at async Client.makeRequestStreamAsync (/app/node_modules/minio/dist/main/internal/client.ts:710:25)
+    at async Client.uploadBuffer (/app/node_modules/minio/dist/main/internal/client.ts:1687:17)
+2025-10-22 17:24:10 [[31merror[39m]: [31mThe specified bucket does not exist[39m
+Stack: S3Error: The specified bucket does not exist
+    at parseError (/app/node_modules/minio/dist/main/internal/xml-parser.ts:49:13)
+    at Object.parseResponseError (/app/node_modules/minio/dist/main/internal/xml-parser.ts:107:11)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.makeRequestStreamAsync (/app/node_modules/minio/dist/main/internal/client.ts:740:19)
+    at async Client.getBucketRegionAsync (/app/node_modules/minio/dist/main/internal/client.ts:794:19)
+    at async Client.makeRequestStreamAsync (/app/node_modules/minio/dist/main/internal/client.ts:710:25)
+    at async Client.uploadBuffer (/app/node_modules/minio/dist/main/internal/client.ts:1687:17)
+2025-10-22 17:24:57 [[31merror[39m]: [31minvalid input syntax for type integer: "{"1","maxresdefault.jpg"}"[39m
+Stack: error: [31minvalid input syntax for type integer: "{"1","maxresdefault.jpg"}"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 17:24:57 [[31merror[39m]: [31minvalid input syntax for type integer: "[39m
+[31m        insert into app.object_file (object_id, file_id) values ($1,$2) [39m
+[31m    "[39m
+Stack: error: [31minvalid input syntax for type integer: "[39m
+[31m        insert into app.object_file (object_id, file_id) values ($1,$2) [39m
+[31m    "[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 17:27:19 [[31merror[39m]: [31minvalid input syntax for type integer: "{"maxresdefault.jpg","1"}"[39m
+Stack: error: [31minvalid input syntax for type integer: "{"maxresdefault.jpg","1"}"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 17:27:19 [[31merror[39m]: [31minvalid input syntax for type integer: "[39m
+[31m        insert into app.object_file (object_id, file_id) values ($1,$2) [39m
+[31m    "[39m
+Stack: error: [31minvalid input syntax for type integer: "[39m
+[31m        insert into app.object_file (object_id, file_id) values ($1,$2) [39m
+[31m    "[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 17:30:03 [[31merror[39m]: [31minvalid input syntax for type integer: "{"maxresdefault.jpg","1"}"[39m
+Stack: error: [31minvalid input syntax for type integer: "{"maxresdefault.jpg","1"}"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 17:30:03 [[31merror[39m]: [31minvalid input syntax for type integer: "[39m
+[31m        insert into app.object_file (object_id, file_id) values ($1,$2) [39m
+[31m    "[39m
+Stack: error: [31minvalid input syntax for type integer: "[39m
+[31m        insert into app.object_file (object_id, file_id) values ($1,$2) [39m
+[31m    "[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 17:31:10 [[31merror[39m]: [31minvalid input syntax for type integer: "{"maxresdefault.jpg","1"}"[39m
+Stack: error: [31minvalid input syntax for type integer: "{"maxresdefault.jpg","1"}"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 17:31:10 [[31merror[39m]: [31minvalid input syntax for type integer: "[39m
+[31m        insert into app.object_file (object_id, file_id) values ($1,$2) [39m
+[31m    "[39m
+Stack: error: [31minvalid input syntax for type integer: "[39m
+[31m        insert into app.object_file (object_id, file_id) values ($1,$2) [39m
+[31m    "[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 17:34:35 [[31merror[39m]: [31minvalid input syntax for type integer: "{"maxresdefault.jpg","1"}"[39m
+Stack: error: [31minvalid input syntax for type integer: "{"maxresdefault.jpg","1"}"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 17:34:35 [[31merror[39m]: [31minvalid input syntax for type integer: "[39m
+[31m        insert into app.object_file (object_id, file_id) values ($1,$2) [39m
+[31m    "[39m
+Stack: error: [31minvalid input syntax for type integer: "[39m
+[31m        insert into app.object_file (object_id, file_id) values ($1,$2) [39m
+[31m    "[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 17:35:42 [[31merror[39m]: [31minvalid input syntax for type integer: "[39m
+[31m        insert into app.object_file (object_id, file_id) values ($1,$2) [39m
+[31m    "[39m
+Stack: error: [31minvalid input syntax for type integer: "[39m
+[31m        insert into app.object_file (object_id, file_id) values ($1,$2) [39m
+[31m    "[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 17:53:15 [[31merror[39m]: [31mCannot read properties of null (reading 'id')[39m
+Stack: TypeError: [31mCannot read properties of null (reading 'id')[39m
+    at /app/src/controllers/file.ts:86:38
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/controllers/file.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 17:55:27 [[31merror[39m]: [31mCannot read properties of undefined (reading 'id')[39m
+Stack: TypeError: [31mCannot read properties of undefined (reading 'id')[39m
+    at /app/src/db_apis/file.ts:61:24
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/db_apis/file.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 17:55:30 [[31merror[39m]: [31mInvalid bucket name: undefined[39m
+Stack: InvalidBucketNameError: [31mInvalid bucket name: undefined[39m
+    at Client.apply (/app/node_modules/minio/dist/main/internal/client.ts:2927:13)
+    at Client.presignedGetObject (/app/node_modules/minio/dist/main/internal/callbackify.js:16:15)
+    at /app/src/controllers/file.ts:88:40
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/controllers/file.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
