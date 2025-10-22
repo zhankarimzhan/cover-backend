@@ -1,4 +1,20 @@
-/node_modules
-dist
-logs
-npm-debug.log
+# Node.js dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Optional: ignore environment and config files
+.env
+.env.local
+
+# Ignore system files
+.DS_Store
+
+# Ignore gitignore itself if needed (though usually not recommended)
+# .gitignore
