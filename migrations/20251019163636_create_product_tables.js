@@ -20,6 +20,7 @@ CREATE TABLE app.product_card (
   update_date timestamp NULL,
   create_user_id int REFERENCES hr."user"(id),
   product_type_id int REFERENCES ref.product_type(id),
+  update_user_id int references hr.user(id),
   current_price int
 );
 

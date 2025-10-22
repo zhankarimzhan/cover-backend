@@ -4,9 +4,39 @@ import log from "../logger/logger";
 import { NextFunction, Request, Response } from "express";
 import { createBind } from "../utills/bind";
 import getClient from "../db_apis/db";
-import { product_card_create_db, product_card_get_db, product_card_put_db } from "../db_apis/productCard";
+import { product_card_create_db, product_card_get_db, product_card_update_db, product_type_create_db } from "../db_apis/productCard";
 import { post_product_card_comments_db, product_card_comments_db } from "../db_apis/productCardComments";
 
+
+
+export async function productTypePost(req: Request, res: Response, next: NextFunction) {
+    let client;
+    try {
+        client = await getClient();
+        await client.connect();
+        const bind = createBind(req);    
+        if(!bind.name) {
+            throw {
+                code : HttpStatus.BAD_REQUEST,
+                message : "name is required"
+            }
+        }      
+   
+        const data = await product_type_create_db(bind, client);
+
+    
+        res.status(HttpStatus.CREATED).json({
+            statusCode: HttpStatus.CREATED,
+            message: "Product type created",
+            data
+        });
+    } catch (error: any) {
+        log.error("Error in productCardController:", error);
+        next(error);
+    } finally {
+        await client?.end();
+    }
+}
 
 export async function productCardPost(req: Request, res: Response, next: NextFunction) {
     let client;
@@ -14,6 +44,7 @@ export async function productCardPost(req: Request, res: Response, next: NextFun
         client = await getClient();
         await client.connect();
         const bind = createBind(req);
+        bind.create_user_id = bind.user_id
         log.debug(JSON.stringify(bind))
         const { name, product_type_id, current_price } = bind;
 
@@ -70,7 +101,7 @@ export async function productCardPut(req: Request, res: Response, next: NextFunc
             return res.status(HttpStatus.NOT_FOUND).json({ message: "Product card not found." });
         }
         bind.old_price = existing.rows[0].current_price
-        let updated = await product_card_put_db(bind,client)
+        let updated = await product_card_update_db(bind,client)
         res.status(HttpStatus.OK).json({
             statusCode: HttpStatus.OK,
             message: "Product card updated",

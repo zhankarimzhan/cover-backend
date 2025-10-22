@@ -700,3 +700,79 @@ Stack: InvalidBucketNameError: [31mInvalid bucket name: undefined[39m
     at Generator.next (<anonymous>)
     at fulfilled (/app/src/controllers/file.ts:5:58)
     at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 18:35:05 [[31merror[39m]: [31msyntax error at or near "WHERE"[39m
+Stack: error: [31msyntax error at or near "WHERE"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 18:35:05 [[31merror[39m]: [31mError in productCardPut: Cannot read properties of undefined (reading 'rows')[39m
+Stack: TypeError: Cannot read properties of undefined (reading 'rows')
+    at /app/src/controllers/productCard.ts:108:27
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/controllers/productCard.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 18:35:05 [[31merror[39m]: [31mCannot read properties of undefined (reading 'rows')[39m
+Stack: TypeError: Cannot read properties of undefined (reading 'rows')
+    at /app/src/controllers/productCard.ts:108:27
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/controllers/productCard.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 18:37:46 [[31merror[39m]: [31msyntax error at or near "WHERE"[39m
+Stack: error: [31msyntax error at or near "WHERE"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 18:37:46 [[31merror[39m]: [31mError in productCardPut: Cannot read properties of undefined (reading 'rows')[39m
+Stack: TypeError: Cannot read properties of undefined (reading 'rows')
+    at /app/src/controllers/productCard.ts:108:27
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/controllers/productCard.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 18:37:46 [[31merror[39m]: [31mCannot read properties of undefined (reading 'rows')[39m
+Stack: TypeError: Cannot read properties of undefined (reading 'rows')
+    at /app/src/controllers/productCard.ts:108:27
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/controllers/productCard.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 18:38:02 [[31merror[39m]: [31msyntax error at or near "WHERE"[39m
+Stack: error: [31msyntax error at or near "WHERE"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 18:38:02 [[31merror[39m]: [31mError in productCardPut: Cannot read properties of undefined (reading 'rows')[39m
+Stack: TypeError: Cannot read properties of undefined (reading 'rows')
+    at /app/src/controllers/productCard.ts:108:27
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/controllers/productCard.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 18:38:02 [[31merror[39m]: [31mCannot read properties of undefined (reading 'rows')[39m
+Stack: TypeError: Cannot read properties of undefined (reading 'rows')
+    at /app/src/controllers/productCard.ts:108:27
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/controllers/productCard.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 18:41:18 [[31merror[39m]: [31mSQL ERROR =>[39m
+[31m                    [39m
+[31m            UPDATE app.product_card[39m
+[31m            SET description = $1, update_user_id = $2, update_date = NOW()[39m
+[31m            WHERE id = $3[39m
+[31m            RETURNING id, name, description, product_type_id, current_price, update_date[39m
+[31m        [39m
+[31m                    sdasdad,,2[39m
+2025-10-22 18:41:18 [[31merror[39m]: [31mError in productCardPut: column "update_user_id" of relation "product_card" does not exist[39m
+Stack: error: column "update_user_id" of relation "product_card" does not exist
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 18:41:18 [[31merror[39m]: [31mcolumn "update_user_id" of relation "product_card" does not exist[39m
+Stack: error: column "update_user_id" of relation "product_card" does not exist
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 18:42:58 [[31merror[39m]: [31mError in productCardPut: Cannot read properties of undefined (reading '0')[39m
+Stack: TypeError: Cannot read properties of undefined (reading '0')
+    at /app/src/controllers/productCard.ts:108:31
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/controllers/productCard.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 18:42:58 [[31merror[39m]: [31mCannot read properties of undefined (reading '0')[39m
+Stack: TypeError: Cannot read properties of undefined (reading '0')
+    at /app/src/controllers/productCard.ts:108:31
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/controllers/productCard.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)

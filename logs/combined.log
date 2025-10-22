@@ -1182,3 +1182,229 @@ Stack: InvalidBucketNameError: [31mInvalid bucket name: undefined[39m
 2025-10-22 17:56:28 [[32minfo[39m]: [32m2_maxresdefault.jpg[39m
 2025-10-22 17:56:28 [[32minfo[39m]: [32mhttp://minio:9000/avatars/2_maxresdefault.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=minioadmin%2F20251022%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251022T175628Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=0a0a3a8f9c777df0bc8666399dd6b10d33ba779249081f3b5db9911761a2a05b[39m
 2025-10-22 17:56:28 [[32minfo[39m]: [32m2025-10-22 17:56:28.856 GET /api/1.0/file/1?file_type=1 200 - 38ms[39m
+2025-10-22 18:07:56 [[32minfo[39m]: [32m2025-10-22 18:07:56.892 GET /api/1.0/file-link/1?file_type=1 401 - 5ms[39m
+2025-10-22 18:23:21 [[32minfo[39m]: [32m2025-10-22 18:23:21.636 GET /api/1.0/product-card?file_type=1 401 - 6ms[39m
+2025-10-22 18:23:38 [[34mdebug[39m]: [34m{ host: 'db', port: 5432, user: 'pg', password: 'ps', database: 'db' }[39m
+2025-10-22 18:23:38 [[34mdebug[39m]: [34m{"username":"user"}[39m
+2025-10-22 18:23:38 [[32minfo[39m]: [32m2025-10-22 18:23:38.154 POST /api/1.0/auth/login 200 - 65ms[39m
+2025-10-22 18:23:51 [[34mdebug[39m]: [34m{ host: 'db', port: 5432, user: 'pg', password: 'ps', database: 'db' }[39m
+2025-10-22 18:23:51 [[34mdebug[39m]: [34m{"user_id":1,"user_uuid":"afd9265c-e57b-4365-a75c-df76f8fa3e89","username":"user","iat":1761157418,"exp":1761158318}[39m
+2025-10-22 18:23:51 [[32minfo[39m]: [32m2025-10-22 18:23:51.214 GET /api/1.0/product-card 200 - 10ms[39m
+2025-10-22 18:24:08 [[34mdebug[39m]: [34m{ host: 'db', port: 5432, user: 'pg', password: 'ps', database: 'db' }[39m
+2025-10-22 18:24:08 [[34mdebug[39m]: [34m{"user_id":1,"user_uuid":"afd9265c-e57b-4365-a75c-df76f8fa3e89","username":"user","iat":1761157418,"exp":1761158318}[39m
+2025-10-22 18:24:08 [[32minfo[39m]: [32m2025-10-22 18:24:08.722 POST /api/1.0/product-card 400 - 7ms[39m
+2025-10-22 18:24:15 [[34mdebug[39m]: [34m{ host: 'db', port: 5432, user: 'pg', password: 'ps', database: 'db' }[39m
+2025-10-22 18:24:15 [[34mdebug[39m]: [34m{"name":"test","user_id":1,"user_uuid":"afd9265c-e57b-4365-a75c-df76f8fa3e89","username":"user","iat":1761157418,"exp":1761158318}[39m
+2025-10-22 18:24:15 [[32minfo[39m]: [32m2025-10-22 18:24:15.821 POST /api/1.0/product-card 400 - 7ms[39m
+2025-10-22 18:24:27 [[34mdebug[39m]: [34m{ host: 'db', port: 5432, user: 'pg', password: 'ps', database: 'db' }[39m
+2025-10-22 18:24:27 [[34mdebug[39m]: [34m{"name":"test","product_type_id":1,"user_id":1,"user_uuid":"afd9265c-e57b-4365-a75c-df76f8fa3e89","username":"user","iat":1761157418,"exp":1761158318}[39m
+2025-10-22 18:24:27 [[32minfo[39m]: [32m2025-10-22 18:24:27.054 POST /api/1.0/product-card 400 - 6ms[39m
+2025-10-22 18:29:17 [[32minfo[39m]: [32m2025-10-22 18:29:17.077 POST /api/1.0/product-type 404 - 5ms[39m
+2025-10-22 18:29:28 [[34mdebug[39m]: [34m{ host: 'db', port: 5432, user: 'pg', password: 'ps', database: 'db' }[39m
+2025-10-22 18:29:28 [[32minfo[39m]: [32m2025-10-22 18:29:28.898 POST /api/1.0/product-type 201 - 26ms[39m
+2025-10-22 18:29:34 [[34mdebug[39m]: [34m{ host: 'db', port: 5432, user: 'pg', password: 'ps', database: 'db' }[39m
+2025-10-22 18:29:34 [[34mdebug[39m]: [34m{"name":"test","product_type_id":1,"current_price":500,"user_id":1,"user_uuid":"afd9265c-e57b-4365-a75c-df76f8fa3e89","username":"user","iat":1761157418,"exp":1761158318}[39m
+2025-10-22 18:29:34 [[32minfo[39m]: [32m2025-10-22 18:29:34.130 POST /api/1.0/product-card 201 - 16ms[39m
+2025-10-22 18:29:40 [[34mdebug[39m]: [34m{ host: 'db', port: 5432, user: 'pg', password: 'ps', database: 'db' }[39m
+2025-10-22 18:29:40 [[34mdebug[39m]: [34m{"user_id":1,"user_uuid":"afd9265c-e57b-4365-a75c-df76f8fa3e89","username":"user","iat":1761157418,"exp":1761158318}[39m
+2025-10-22 18:29:40 [[32minfo[39m]: [32m2025-10-22 18:29:40.640 GET /api/1.0/product-card 200 - 8ms[39m
+2025-10-22 18:33:12 [[34mdebug[39m]: [34m{ host: 'db', port: 5432, user: 'pg', password: 'ps', database: 'db' }[39m
+2025-10-22 18:33:12 [[34mdebug[39m]: [34m{"name":"test 2","product_type_id":1,"current_price":500,"user_id":1,"user_uuid":"afd9265c-e57b-4365-a75c-df76f8fa3e89","username":"user","iat":1761157418,"exp":1761158318,"create_user_id":1}[39m
+2025-10-22 18:33:12 [[32minfo[39m]: [32m2025-10-22 18:33:12.681 POST /api/1.0/product-card 201 - 28ms[39m
+2025-10-22 18:33:21 [[34mdebug[39m]: [34m{ host: 'db', port: 5432, user: 'pg', password: 'ps', database: 'db' }[39m
+2025-10-22 18:33:21 [[34mdebug[39m]: [34m{"user_id":1,"user_uuid":"afd9265c-e57b-4365-a75c-df76f8fa3e89","username":"user","iat":1761157418,"exp":1761158318}[39m
+2025-10-22 18:33:21 [[32minfo[39m]: [32m2025-10-22 18:33:21.853 GET /api/1.0/product-card 200 - 10ms[39m
+2025-10-22 18:35:05 [[34mdebug[39m]: [34m{ host: 'db', port: 5432, user: 'pg', password: 'ps', database: 'db' }[39m
+2025-10-22 18:35:05 [[31merror[39m]: [31msyntax error at or near "WHERE"[39m
+Stack: error: [31msyntax error at or near "WHERE"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 18:35:05 [[31merror[39m]: [31mError in productCardPut: Cannot read properties of undefined (reading 'rows')[39m
+Stack: TypeError: Cannot read properties of undefined (reading 'rows')
+    at /app/src/controllers/productCard.ts:108:27
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/controllers/productCard.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 18:35:05 [[31merror[39m]: [31mCannot read properties of undefined (reading 'rows')[39m
+Stack: TypeError: Cannot read properties of undefined (reading 'rows')
+    at /app/src/controllers/productCard.ts:108:27
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/controllers/productCard.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 18:35:05 [[32minfo[39m]: [32m2025-10-22 18:35:05.182 PUT /api/1.0/product-card/2 500 - 26ms[39m
+2025-10-22 18:37:46 [[34mdebug[39m]: [34m{ host: 'db', port: 5432, user: 'pg', password: 'ps', database: 'db' }[39m
+2025-10-22 18:37:46 [[31merror[39m]: [31msyntax error at or near "WHERE"[39m
+Stack: error: [31msyntax error at or near "WHERE"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 18:37:46 [[31merror[39m]: [31mError in productCardPut: Cannot read properties of undefined (reading 'rows')[39m
+Stack: TypeError: Cannot read properties of undefined (reading 'rows')
+    at /app/src/controllers/productCard.ts:108:27
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/controllers/productCard.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 18:37:46 [[31merror[39m]: [31mCannot read properties of undefined (reading 'rows')[39m
+Stack: TypeError: Cannot read properties of undefined (reading 'rows')
+    at /app/src/controllers/productCard.ts:108:27
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/controllers/productCard.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 18:37:46 [[32minfo[39m]: [32m2025-10-22 18:37:46.653 PUT /api/1.0/product-card/2 500 - 27ms[39m
+2025-10-22 18:37:56 [[34mdebug[39m]: [34m{ host: 'db', port: 5432, user: 'pg', password: 'ps', database: 'db' }[39m
+2025-10-22 18:37:56 [[34mdebug[39m]: [34m{"user_id":1,"user_uuid":"afd9265c-e57b-4365-a75c-df76f8fa3e89","username":"user","iat":1761157418,"exp":1761158318}[39m
+2025-10-22 18:37:56 [[32minfo[39m]: [32m2025-10-22 18:37:56.361 GET /api/1.0/product-card 200 - 9ms[39m
+2025-10-22 18:38:02 [[34mdebug[39m]: [34m{ host: 'db', port: 5432, user: 'pg', password: 'ps', database: 'db' }[39m
+2025-10-22 18:38:02 [[31merror[39m]: [31msyntax error at or near "WHERE"[39m
+Stack: error: [31msyntax error at or near "WHERE"[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 18:38:02 [[31merror[39m]: [31mError in productCardPut: Cannot read properties of undefined (reading 'rows')[39m
+Stack: TypeError: Cannot read properties of undefined (reading 'rows')
+    at /app/src/controllers/productCard.ts:108:27
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/controllers/productCard.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 18:38:02 [[31merror[39m]: [31mCannot read properties of undefined (reading 'rows')[39m
+Stack: TypeError: Cannot read properties of undefined (reading 'rows')
+    at /app/src/controllers/productCard.ts:108:27
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/controllers/productCard.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 18:38:02 [[32minfo[39m]: [32m2025-10-22 18:38:02.839 PUT /api/1.0/product-card/2 500 - 9ms[39m
+2025-10-22 18:40:57 [[32minfo[39m]: [32m2025-10-22 18:40:57.843 PUT /api/1.0/product-card/2 401 - 4ms[39m
+2025-10-22 18:40:59 [[32minfo[39m]: [32m2025-10-22 18:40:59.649 PUT /api/1.0/product-card/2 401 - 1ms[39m
+2025-10-22 18:41:00 [[32minfo[39m]: [32m2025-10-22 18:41:00.899 PUT /api/1.0/product-card/2 401 - 1ms[39m
+2025-10-22 18:41:05 [[34mdebug[39m]: [34m{ host: 'db', port: 5432, user: 'pg', password: 'ps', database: 'db' }[39m
+2025-10-22 18:41:05 [[34mdebug[39m]: [34m{"username":"user"}[39m
+2025-10-22 18:41:05 [[32minfo[39m]: [32m2025-10-22 18:41:05.116 POST /api/1.0/auth/login 200 - 66ms[39m
+2025-10-22 18:41:18 [[34mdebug[39m]: [34m{ host: 'db', port: 5432, user: 'pg', password: 'ps', database: 'db' }[39m
+2025-10-22 18:41:18 [[31merror[39m]: [31mSQL ERROR =>[39m
+[31m                    [39m
+[31m            UPDATE app.product_card[39m
+[31m            SET description = $1, update_user_id = $2, update_date = NOW()[39m
+[31m            WHERE id = $3[39m
+[31m            RETURNING id, name, description, product_type_id, current_price, update_date[39m
+[31m        [39m
+[31m                    sdasdad,,2[39m
+2025-10-22 18:41:18 [[31merror[39m]: [31mError in productCardPut: column "update_user_id" of relation "product_card" does not exist[39m
+Stack: error: column "update_user_id" of relation "product_card" does not exist
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 18:41:18 [[31merror[39m]: [31mcolumn "update_user_id" of relation "product_card" does not exist[39m
+Stack: error: column "update_user_id" of relation "product_card" does not exist
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 18:41:18 [[32minfo[39m]: [32m2025-10-22 18:41:18.662 PUT /api/1.0/product-card/2 500 - 12ms[39m
+2025-10-22 18:42:58 [[34mdebug[39m]: [34m{ host: 'db', port: 5432, user: 'pg', password: 'ps', database: 'db' }[39m
+2025-10-22 18:42:58 [[34mdebug[39m]: [34mResult {[39m
+[34m  command: 'UPDATE',[39m
+[34m  rowCount: 1,[39m
+[34m  oid: null,[39m
+[34m  rows: [[39m
+[34m    {[39m
+[34m      id: 2,[39m
+[34m      name: 'test 2',[39m
+[34m      description: 'sdasdad',[39m
+[34m      product_type_id: 1,[39m
+[34m      current_price: 500,[39m
+[34m      update_date: '2025-10-22 18:42:58.914068'[39m
+[34m    }[39m
+[34m  ],[39m
+[34m  fields: [[39m
+[34m    Field {[39m
+[34m      name: 'id',[39m
+[34m      tableID: 16423,[39m
+[34m      columnID: 1,[39m
+[34m      dataTypeID: 23,[39m
+[34m      dataTypeSize: 4,[39m
+[34m      dataTypeModifier: -1,[39m
+[34m      format: 'text'[39m
+[34m    },[39m
+[34m    Field {[39m
+[34m      name: 'name',[39m
+[34m      tableID: 16423,[39m
+[34m      columnID: 2,[39m
+[34m      dataTypeID: 1043,[39m
+[34m      dataTypeSize: -1,[39m
+[34m      dataTypeModifier: 259,[39m
+[34m      format: 'text'[39m
+[34m    },[39m
+[34m    Field {[39m
+[34m      name: 'description',[39m
+[34m      tableID: 16423,[39m
+[34m      columnID: 3,[39m
+[34m      dataTypeID: 25,[39m
+[34m      dataTypeSize: -1,[39m
+[34m      dataTypeModifier: -1,[39m
+[34m      format: 'text'[39m
+[34m    },[39m
+[34m    Field {[39m
+[34m      name: 'product_type_id',[39m
+[34m      tableID: 16423,[39m
+[34m      columnID: 7,[39m
+[34m      dataTypeID: 23,[39m
+[34m      dataTypeSize: 4,[39m
+[34m      dataTypeModifier: -1,[39m
+[34m      format: 'text'[39m
+[34m    },[39m
+[34m    Field {[39m
+[34m      name: 'current_price',[39m
+[34m      tableID: 16423,[39m
+[34m      columnID: 8,[39m
+[34m      dataTypeID: 23,[39m
+[34m      dataTypeSize: 4,[39m
+[34m      dataTypeModifier: -1,[39m
+[34m      format: 'text'[39m
+[34m    },[39m
+[34m    Field {[39m
+[34m      name: 'update_date',[39m
+[34m      tableID: 16423,[39m
+[34m      columnID: 5,[39m
+[34m      dataTypeID: 1114,[39m
+[34m      dataTypeSize: 8,[39m
+[34m      dataTypeModifier: -1,[39m
+[34m      format: 'text'[39m
+[34m    }[39m
+[34m  ],[39m
+[34m  _parsers: [[39m
+[34m    [Function: parseInteger],[39m
+[34m    [Function: noParse],[39m
+[34m    [Function: noParse],[39m
+[34m    [Function: parseInteger],[39m
+[34m    [Function: parseInteger],[39m
+[34m    [Function (anonymous)][39m
+[34m  ],[39m
+[34m  _types: TypeOverrides {[39m
+[34m    _types: {[39m
+[34m      getTypeParser: [Function: getTypeParser],[39m
+[34m      setTypeParser: [Function: setTypeParser],[39m
+[34m      arrayParser: [Object],[39m
+[34m      builtins: [Object][39m
+[34m    },[39m
+[34m    text: {},[39m
+[34m    binary: {}[39m
+[34m  },[39m
+[34m  RowCtor: null,[39m
+[34m  rowAsArray: false,[39m
+[34m  _prebuiltEmptyResultObject: {[39m
+[34m    id: null,[39m
+[34m    name: null,[39m
+[34m    description: null,[39m
+[34m    product_type_id: null,[39m
+[34m    current_price: null,[39m
+[34m    update_date: null[39m
+[34m  }[39m
+[34m}[39m
+2025-10-22 18:42:58 [[31merror[39m]: [31mError in productCardPut: Cannot read properties of undefined (reading '0')[39m
+Stack: TypeError: Cannot read properties of undefined (reading '0')
+    at /app/src/controllers/productCard.ts:108:31
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/controllers/productCard.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 18:42:58 [[31merror[39m]: [31mCannot read properties of undefined (reading '0')[39m
+Stack: TypeError: Cannot read properties of undefined (reading '0')
+    at /app/src/controllers/productCard.ts:108:31
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/controllers/productCard.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 18:42:58 [[32minfo[39m]: [32m2025-10-22 18:42:58.905 PUT /api/1.0/product-card/2 500 - 20ms[39m

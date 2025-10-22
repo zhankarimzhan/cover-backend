@@ -1,6 +1,6 @@
 import { Router, Request, Response } from "express";
 import { authController, refreshController, registerController } from "./controllers/user";
-import { productCardCommentsGet, productCardCommentsPost, productCardGet, productCardPost, productCardPut } from "./controllers/productCard";
+import { productCardCommentsGet, productCardCommentsPost, productCardGet, productCardPost, productCardPut, productTypePost } from "./controllers/productCard";
 import { filePost, objectFileGet } from "./controllers/file";
 
 const router = Router();
@@ -16,9 +16,9 @@ router.post('/auth/login', authController)
 
 router.post('/refresh', refreshController)
 
-
+router.post('/product-type',productTypePost)
 router.post('/product-card', productCardPost)
-router.put('/product-card', productCardPut)
+router.put('/product-card/:id', productCardPut)
 router.get('/product-card', productCardGet)
 
 router.get('/product-card/comments/:id',productCardCommentsGet)

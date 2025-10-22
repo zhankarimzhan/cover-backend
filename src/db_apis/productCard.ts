@@ -1,7 +1,54 @@
 import { Client } from "pg";
 import log from "../logger/logger";
 
-export async function product_card_create_db(bind: any, client: Client) {
+interface procuctTypeCreate {
+    name : string
+}
+interface productCardCreate {
+    name : string,
+    description : string,
+    create_user_id : string,
+    product_type_id : number,
+    current_price : number
+
+}
+
+interface productCardUpdate {
+    name : string,
+    description : string,
+    create_user_id : string,
+    product_type_id : number,
+    current_price : number,
+    update_user_id : number,
+    id : number
+
+}
+
+export async function product_type_create_db(bind: procuctTypeCreate, client: Client) {
+    let query = "";
+    let values: any[] = [];
+
+    try {
+        query = `
+            insert into ref.product_type (name)  values ($1)  
+        `;
+
+        values.push(bind.name);
+        
+        const result = await client.query(query, values);
+        return result.rows[0];
+
+    } catch (error) {
+        log.error(`SQL ERROR =>
+                    ${query}
+                    ${values}`);
+        throw error;
+    }
+}
+
+
+
+export async function product_card_create_db(bind: productCardCreate, client: Client) {
     let query = "";
     let values: any[] = [];
 
@@ -29,7 +76,7 @@ export async function product_card_create_db(bind: any, client: Client) {
         throw error;
     }
 }
-export async function product_card_update_db(bind: any, client: Client) {
+export async function product_card_update_db(bind: productCardUpdate, client: Client) {
     let query = "";
     let values: any[] = [];
     let setParts: string[] = [];
@@ -78,6 +125,7 @@ export async function product_card_update_db(bind: any, client: Client) {
         values.push(bind.id);
 
         const result = await client.query(query, values);
+        log.debug(result)
         return result.rows[0];
 
     } catch (error) {
@@ -128,38 +176,7 @@ export async function product_card_get_db(bind: any, client: Client) {
         throw error;
     }
 }
-export async function product_card_put_db (bind : any, client: any) {
-    const { id, name, product_type_id, current_price } = bind;
 
-      // Формируем динамический UPDATE (только изменённые поля)
-        let query = `UPDATE app.product_card SET `;
-        let values: any[] = [];
-        let counter = 1;
-
-        if (name !== undefined) {
-            query += `name = $${counter++}, `;
-            values.push(name);
-        }
-        if (product_type_id !== undefined) {
-            query += `product_type_id = $${counter++}, `;
-            values.push(product_type_id);
-        }
-        if (current_price !== undefined) {
-            query += `current_price = $${counter++}, `;
-            values.push(current_price);
-        }
-
-        // Убираем последнюю запятую
-        query = query.slice(0, -2);
-        query += ` WHERE id = $${counter} RETURNING *`;
-        values.push(id);
-        try {
-        const updated = await client.query(query, values);
-        return updated
-        }catch (error){
-            log.error(error)
-        }
-}
 export async function product_card_history_post_db (bind : any, client: any) {
     const { id, name, product_type_id, current_price } = bind;
 
