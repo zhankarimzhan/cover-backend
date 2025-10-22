@@ -1,6 +1,10 @@
 exports.up = function (knex) {
   return knex.raw(`
+create schema ref;
 
+create schema hr;
+
+create schema app;
 
 
 CREATE TABLE ref.product_type (

@@ -1,7 +1,7 @@
 import { Router, Request, Response } from "express";
 import { authController, refreshController, registerController } from "./controllers/user";
 import { productCardCommentsGet, productCardCommentsPost, productCardGet, productCardPost, productCardPut } from "./controllers/productCard";
-import { filePost } from "./db_apis/file";
+import { filePost, objectFileGet } from "./controllers/file";
 
 const router = Router();
 
@@ -25,7 +25,8 @@ router.get('/product-card/comments/:id',productCardCommentsGet)
 router.post('/product-card/comments/:id',productCardCommentsPost)
 
 
-router.post('/file', filePost)
+router.post('/file/:id', filePost)
+router.get('/file',objectFileGet)
 
 
 export default router;

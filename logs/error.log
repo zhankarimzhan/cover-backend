@@ -534,3 +534,59 @@ Stack: S3Error: The specified bucket does not exist
     at async Client.getBucketRegionAsync (/app/node_modules/minio/dist/main/internal/client.ts:794:19)
     at async Client.makeRequestStreamAsync (/app/node_modules/minio/dist/main/internal/client.ts:710:25)
     at async Client.uploadBuffer (/app/node_modules/minio/dist/main/internal/client.ts:1687:17)
+2025-10-22 17:04:09 [[31merror[39m]: [31mError in productCardController: file type is required[39m
+2025-10-22 17:04:09 [[31merror[39m]: [31mfile type is required[39m
+2025-10-22 17:04:53 [[31merror[39m]: [31mError in productCardController: Cannot destructure property 'rows' of '(intermediate value)' as it is undefined.[39m
+Stack: TypeError: Cannot destructure property 'rows' of '(intermediate value)' as it is undefined.
+    at /app/src/controllers/file.ts:36:21
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/controllers/file.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 17:04:53 [[31merror[39m]: [31mCannot destructure property 'rows' of '(intermediate value)' as it is undefined.[39m
+Stack: TypeError: Cannot destructure property 'rows' of '(intermediate value)' as it is undefined.
+    at /app/src/controllers/file.ts:36:21
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/controllers/file.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 17:06:20 [[31merror[39m]: [31mError in productCardController: Cannot destructure property 'rows' of '(intermediate value)' as it is undefined.[39m
+Stack: TypeError: Cannot destructure property 'rows' of '(intermediate value)' as it is undefined.
+    at /app/src/controllers/file.ts:36:21
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/controllers/file.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 17:06:20 [[31merror[39m]: [31mCannot destructure property 'rows' of '(intermediate value)' as it is undefined.[39m
+Stack: TypeError: Cannot destructure property 'rows' of '(intermediate value)' as it is undefined.
+    at /app/src/controllers/file.ts:36:21
+    at Generator.next (<anonymous>)
+    at fulfilled (/app/src/controllers/file.ts:5:58)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 17:07:15 [[31merror[39m]: [31mError in productCardController: Файл не найден. Используй form-data с ключом 'file'[39m
+2025-10-22 17:07:15 [[31merror[39m]: [31mФайл не найден. Используй form-data с ключом 'file'[39m
+2025-10-22 17:08:11 [[31merror[39m]: [31minvalid input syntax for type integer: "[39m
+[31m        insert into app.file (file_type_id,name) values ($1,$2) [39m
+[31m    "[39m
+Stack: error: [31minvalid input syntax for type integer: "[39m
+[31m        insert into app.file (file_type_id,name) values ($1,$2) [39m
+[31m    "[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 17:08:11 [[31merror[39m]: [31mError in productCardController: connect ECONNREFUSED 127.0.0.1:9000[39m
+Stack: Error: connect ECONNREFUSED 127.0.0.1:9000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+2025-10-22 17:08:11 [[31merror[39m]: [31mconnect ECONNREFUSED 127.0.0.1:9000[39m
+Stack: Error: connect ECONNREFUSED 127.0.0.1:9000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+2025-10-22 17:10:17 [[31merror[39m]: [31minvalid input syntax for type integer: "[39m
+[31m        insert into app.file (file_type_id,name) values ($1,$2) [39m
+[31m    "[39m
+Stack: error: [31minvalid input syntax for type integer: "[39m
+[31m        insert into app.file (file_type_id,name) values ($1,$2) [39m
+[31m    "[39m
+    at /app/node_modules/pg/lib/client.js:545:17
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+2025-10-22 17:10:17 [[31merror[39m]: [31mError in productCardController: connect ECONNREFUSED 127.0.0.1:9000[39m
+Stack: Error: connect ECONNREFUSED 127.0.0.1:9000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
+2025-10-22 17:10:17 [[31merror[39m]: [31mconnect ECONNREFUSED 127.0.0.1:9000[39m
+Stack: Error: connect ECONNREFUSED 127.0.0.1:9000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1555:16)
